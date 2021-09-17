@@ -1,0 +1,12 @@
+<template>
+
+
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ottoman_Sultan_Selim_III_banner.jpg"  alt="" class="img-fluid">
+  </div>
+
+
+
+
+
+</template>
