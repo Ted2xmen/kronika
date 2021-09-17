@@ -1,10 +1,10 @@
 <template>
-  <div class="row row-cols-1 row-cols-md-3 g-3">
+  <div class="row row-cols-1 row-cols-md-3 g-3" v-show="false">
 
 
 
 
-    <div class="col" v-for="item in 6" :key="item">
+    <div class="col" v-for="item in 1" :key="item">
       <div class="card hover morder">
         <div class="row">
           <div class="col-md-3">

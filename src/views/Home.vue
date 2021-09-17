@@ -34,8 +34,8 @@
       </div>
 
 
-         <TheSix />
-    <TheTable />
+         <TheBooks />
+ 
 
   
     </div>
@@ -49,9 +49,9 @@
 <script>
 import TheNavbar from "@/components/TheNavbar.vue";
 import TheHero from "@/components/TheHero.vue";
-import TheSix from "@/components/TheSix.vue";
+import TheBooks from "@/components/TheBooks.vue";
 import TheMain from "@/components/TheMain.vue";
-import TheTable from "@/components/TheTable.vue";
+
 import TheCardRow from "@/components/TheCardRow.vue";
 import Cards from "@/components/Cards.vue";
 
@@ -59,11 +59,11 @@ import Cards from "@/components/Cards.vue";
 export default {
   name: "Home",
   components: {
-    TheSix,
+    TheBooks,
     TheNavbar,
     TheHero,
     TheMain,
-    TheTable,
+
     TheCardRow,
     Cards
   },
