@@ -63,7 +63,6 @@ export default {
     TheNavbar,
     TheHero,
     TheMain,
-
     TheCardRow,
     Cards
   },
