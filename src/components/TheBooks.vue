@@ -2,7 +2,7 @@
   <div>
     <div class="container-fluid">
       <div class="row py-4">
-        <div class="col-md-3 mt-4 py-4" v-for="item in items" :key="item">
+        <div class="col-md-3 mt-4 py-4" v-for="(item, index) in this.$store.state.kronikler" :key="index">
           <div class="card profile-card-5">
             <div class="card-img-block">
               <img
@@ -12,18 +12,18 @@
               />
             </div>
             <div class="card-body">
-              <h5 class="card-title">{{ item.name }}</h5>
+              <h5 class="card-title">{{ item.baslik }}</h5>
               <h6 class="card-title">
-                Lütfi Paşa <span class="badge bg-danger">PDF</span>
+                {{ item.yazar }} 
               </h6>
-              <span>{{ item.yayinTarihi }}</span>
-              <span class="ms-2 badge bg-warning text-dark">Warning</span>
+              <span>{{ item.tarih }}</span>
+              <span class="ms-2 badge bg-warning text-dark">{{ item.kategori }}</span>
               <span class="ms-2 badge bg-warning text-dark">Warning</span>
               <p class="card-text my-4">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <button class="btn btn-info me-2">sad</button>
+                     <a :href="item.url1" class="btn btn-info">Link</a>
               <button
                 type="button"
                 class="btn btn-primary"
@@ -51,7 +51,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">başlık</h5>
+                <h5 class="modal-title" id="exampleModalLabel">{{ modals.baslik }}</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -69,19 +69,19 @@
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">{{ modals.name }}</h5>
+                    <h5 class="card-title">  {{ modals.baslik }} </h5>
                     <h6 class="card-title">
-                      {{ modals.yazar }}
+                       {{ modals.yazar }} 
                       <span class="badge bg-danger">PDF</span>
                     </h6>
-                    <span>{{ modals.yayinTarihi }}</span>
+                    <span>{{ modals.tarih }}</span>
                     <span class="ms-2 badge bg-warning text-dark">Warning</span>
                     <span class="ms-2 badge bg-warning text-dark">Warning</span>
                     <p class="card-text">
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-                    <button class="btn btn-info me-2">sad</button>
+                    <a :href="modals.url1" class="btn btn-info">PDF</a>
                   </div>
                 </div>
               </div>
@@ -100,48 +100,17 @@ export default {
   methods: {
     showModal(item) {
       this.modals = item
-      console.log(item.name);
-      console.log(this.modals);
+      console.log(item);
+  
     
     },
   },
   data() {
     return {
       deneme: "ted",
-      modals: { name: "", yazar: "", yayinTarihi: "" },
+      modals: {  },
 
-      items: [
-        {
-          name: "Tevarih-i Ali Osman",
-          yazar: "Lütfi Paşa",
-          yayinevi: "Teviri",
-          yayinTarihi: "2000",
-          aciklama:
-            "Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestiae velit voluptatem nostrum similique quae sunt totam explicabo! Eos accusamus dolorum fugiat maiores.",
-          resim:
-            "https://cdn.islamansiklopedisi.org.tr/gorsel/Belge%20-%20Sahife/tevarih-i-al-i-osman-1.jpg",
-        },
-        {
-          name: "Sagopa Kajmer",
-          yazar: "Kötü İnsanları Tanıma Senesi",
-          yayinevi: "Teviri",
-          yayinTarihi: "1922",
-          aciklama:
-            "Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestiae velit voluptatem nostrum similique quae sunt totam explicabo! Eos accusamus dolorum fugiat maiores.",
-          resim:
-            "https://cdn.islamansiklopedisi.org.tr/gorsel/Belge%20-%20Sahife/tevarih-i-al-i-osman-1.jpg",
-        },
-        {
-          name: "Evliya Çelebi Seyahatnam ",
-          yazar: "Çelebi Paşa",
-          yayinevi: "Teviri",
-          yayinTarihi: "1500",
-          aciklama:
-            "Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestiae velit voluptatem nostrum similique quae sunt totam explicabo! Eos accusamus dolorum fugiat maiores.",
-          resim:
-            "https://cdn.islamansiklopedisi.org.tr/gorsel/Belge%20-%20Sahife/tevarih-i-al-i-osman-1.jpg",
-        },
-      ],
+     
     };
   },
 };
