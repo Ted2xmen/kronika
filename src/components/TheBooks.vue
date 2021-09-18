@@ -1,8 +1,41 @@
 <template>
   <div>
+
+
+
+
+
+
     <div class="container-fluid">
-      <div class="row py-4">
-        <div class="col-md-3 mt-4 py-4" v-for="(item, index) in this.$store.state.kronikler" :key="index">
+
+
+
+
+
+
+
+   <div class="col-md-8 fixed">
+<div class="input-group mb-1">
+  <input v-model="searchInput" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-danger" type="button" id="button-addon2">Button</button>
+</div>
+</div>
+
+      <div class="row py-2">
+
+
+
+
+
+
+
+
+        
+        <div
+          class="col-md-3 mt-4 py-4"
+          v-for="(item, index) in filteredBooks"
+          :key="index"
+        >
           <div class="card profile-card-5">
             <div class="card-img-block">
               <img
@@ -14,16 +47,18 @@
             <div class="card-body">
               <h5 class="card-title">{{ item.baslik }}</h5>
               <h6 class="card-title">
-                {{ item.yazar }} 
+                {{ item.yazar }}
               </h6>
               <span>{{ item.tarih }}</span>
-              <span class="ms-2 badge bg-warning text-dark">{{ item.kategori }}</span>
+              <span class="ms-2 badge bg-warning text-dark">{{
+                item.kategori
+              }}</span>
               <span class="ms-2 badge bg-warning text-dark">Warning</span>
               <p class="card-text my-4">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                {{ item.ozet.slice(0,180) }}...
               </p>
-                     <a :href="item.url1" class="btn btn-info">Link</a>
+              <span><img src="src\assets\archive.png" alt=""></span>
+              <a :href="item.url1" class="btn btn-info">Link</a>
               <button
                 type="button"
                 class="btn btn-primary"
@@ -37,9 +72,6 @@
           </div>
         </div>
 
-
-
-
         <!-- modal -->
         <div
           class="modal fade"
@@ -51,7 +83,9 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{ modals.baslik }}</h5>
+                <h5 class="modal-title" id="exampleModalLabel">
+                  {{ modals.baslik }}
+                </h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -69,18 +103,18 @@
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">  {{ modals.baslik }} </h5>
+                    <h5 class="card-title">{{ modals.baslik }}</h5>
                     <h6 class="card-title">
-                       {{ modals.yazar }} 
+                      {{ modals.yazar }}
                       <span class="badge bg-danger">PDF</span>
                     </h6>
                     <span>{{ modals.tarih }}</span>
                     <span class="ms-2 badge bg-warning text-dark">Warning</span>
                     <span class="ms-2 badge bg-warning text-dark">Warning</span>
                     <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                     {{ modals.ozet }}
                     </p>
+                    
                     <a :href="modals.url1" class="btn btn-info">PDF</a>
                   </div>
                 </div>
@@ -97,21 +131,31 @@
 <script>
 export default {
   name: "TheBooks",
-  methods: {
-    showModal(item) {
-      this.modals = item
-      console.log(item);
-  
-    
-    },
-  },
   data() {
     return {
       deneme: "ted",
-      modals: {  },
-
-     
+      modals: {},
+      filteredK: [],
+      searchInput: "",
     };
+  },
+  methods: {
+    showModal(item) {
+      this.modals = item;
+      console.log(item);
+    },
+  },
+
+
+  computed: {
+    filteredBooks() {
+  
+      return this.$store.state.kronikler.filter((item) => {
+        return item.baslik.toLowerCase().includes(this.searchInput.toLowerCase());
+           
+      });
+
+    }
   },
 };
 </script>
