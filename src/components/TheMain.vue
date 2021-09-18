@@ -1,53 +1,138 @@
 <template>
   <div class="mt-4">
 
-
-
-
-
-
-
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://muslimheritage.com/wp-content/uploads/2019/05/muslimheritage-the-science-of-al-biruni-burini-320x198.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption bg-dark d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+     <div class="hover hover-4 text-white rounded"><img src="https://images.nypl.org/index.php?id=81530&t=w" class="w-100" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-4-content">
+          <h3 class="hover-4-title text-uppercase font-weight-bold mb-0 text-white"><span class="font-weight-light"> Galeri</span></h3>
+          <p class="hover-4-description text-uppercase mb-0 small">Road over the Balkan Mountain</p>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item" v-for="(item, index) in 15" :key="index">
-      <img src="https://muslimheritage.com/wp-content/uploads/2019/05/muslimheritage-the-science-of-al-biruni-burini-320x198.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption bg-dark d-none d-md-block">
-        <h5>{{index}} slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-  
-
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-  
 
 
 
 
-  
+
+
+
+
+
+
+
 
   </div>
 </template>
+
+
+<script>
+export default {
+  data() {
+    return {
+    
+    };
+  },
+
+};
+</script>
+
+
+<style scoped>
+
+.img1 {
+  object-fit: cover;
+
+  transform: scale(1.125);
+}
+.img1:hover{
+  transition: .1s step-start ease-in-out;
+     transform: scale(0.125);
+}
+
+
+    .hover {
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 60%;
+    }
+    
+    .hover-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 90;
+        transition: all 0.4s;
+    }
+    
+    .hover img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+    
+    .hover-content {
+        position: relative;
+        z-index: 99;
+    }
+    
+    .hover-4 img {
+        width: 110%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .hover-4 .hover-overlay {
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 90;
+    }
+    
+    .hover-4-title {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 3rem;
+        z-index: 99;
+    }
+    
+    .hover-4-description {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        text-align: right;
+        border-right: 3px solid #fff;
+        padding: 0 1rem;
+        z-index: 99;
+        transform: translateX(-1.5rem);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    
+    @media (min-width: 992px) {
+        .hover-4-description {
+            width: 50%;
+        }
+    }
+    
+    .hover-4:hover img {
+        width: 100%;
+    }
+    
+    .hover-4:hover::after {
+        opacity: 1;
+        transform: none;
+    }
+    
+    .hover-4:hover .hover-4-description {
+        opacity: 1;
+        transform: none;
+    }
+    
+    .hover-4:hover .hover-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+</style>

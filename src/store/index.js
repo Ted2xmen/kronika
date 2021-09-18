@@ -2,6 +2,23 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
+
+
+    randomImage : [
+    
+      {id: 3 , title: "Road over the Balkan Mountain", img: "https://images.nypl.org/index.php?id=81530&t=w"},
+      {id: 4 , title: "Ottoman Empire, 1870s", img: "https://images.nypl.org/index.php?id=834264&t=w"},
+      {id: 5 , title: "Road over the Balkan Mountain", img: "https://images.nypl.org/index.php?id=81530&t=w"},
+      {id: 6 , title: "Deneme", img: "https://images.nypl.org/index.php?id=81520&t=w"},
+      {id: 7 , title: "Road over the Balkan Mountain", img: "https://images.nypl.org/index.php?id=81530&t=w"},
+      {id: 9 , title: "Dignitari della corte Ottomana", img: "https://images.nypl.org/index.php?id=812348&t=w"},
+      {id: 8 , title: "Road over the Balkan Mountain", img: "https://images.nypl.org/index.php?id=81530&t=w"},
+      {id: 11 , title: "Mosque of Sultan Achmet", img: "https://images.nypl.org/index.php?id=81514&t=w"},
+      {id: 10 , title: "View near Bucharest", img: "https://images.nypl.org/index.php?id=81514&t=w"},
+
+    ],
+
+
     kronikler: [
  
       

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="container-fluid ">
-    
-      <div class="col-10 mx-auto ">
-          <h1>Kronik Arama Bölümü</h1>
-        <div class="input-group mb-1 mt-3  pt-4">
+    <div class="container-fluid glass-1 px-5 py-4 my-3 mx-auto ">
+     <h1>Osmanlı Kronikleri</h1>
+      <div class="col-6 mx-auto">
+         
+        <div class="input-group mb-1 mt-3 pt-4">
           <input
             v-model="searchInput"
             type="text"
@@ -30,11 +30,11 @@
 
       <div class="row">
         <div
-          class="col-md-3 mt-4 py-4"
+          class="col-md-3 mt-4 py-4 "
           v-for="(item, index) in filteredBooks"
           :key="index"
         >
-          <div class="card profile-card-5">
+          <div class="card profile-card-5 book-color">
             <div class="card-img-block">
               <img
                 class="img-fluid card-img-top box-1"
@@ -57,7 +57,7 @@
                 item.kategori
               }}</span>
               <span class="ms-2 badge bg-warning text-dark">Warning</span>
-              <p class="card-text my-4">{{ item.ozet.slice(0, 180) }}...</p>
+              <p class="card-text my-4">{{ item.ozet.slice(0, 150) }}...</p>
               <span><img src="src\assets\archive.png" alt="" /></span>
               <a :href="item.url1" class="btn btn-info">Link</a>
               <button
@@ -161,7 +161,7 @@ export default {
 </script>
 
 <style scoped>
-/*Profile Card 5*/
+
 .profile-card-5 {
   margin-top: 20px;
 }
@@ -173,25 +173,13 @@ export default {
 }
 .profile-card-5 .card-img-block {
   width: 81%;
-
   margin: 0 auto;
   position: relative;
   top: -30px;
 }
-.profile-card-5 .card-img-block img {
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
-}
-.profile-card-5 h5 {
-  color: #4e5e30;
-  font-weight: 600;
-}
-.profile-card-5 p {
-  font-size: 14px;
-  font-weight: 300;
-}
-.profile-card-5 .btn-primary {
-  background-color: #4e5e30;
-  border-color: #4e5e30;
-}
+
+
+
+
+
 </style>
