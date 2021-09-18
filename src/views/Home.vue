@@ -15,6 +15,7 @@
           <TheMain />
         </div>
       </div>
+      <Cards />
 
       <div class="row">
         <div class="col-md-2">
@@ -34,20 +35,21 @@
       </div>
 
 
-         <TheBooks />
+         <TheBooks class="bg-warning card box-2" />
  
 
   
     </div>
 
-  <div class="container">
-      <Cards />
-  </div>
+
+  <TheFooter class="card mt-2 mb-4"/>
   </div>
 </template>
 
 <script>
 import TheNavbar from "@/components/TheNavbar.vue";
+import TheFooter from "@/components/TheFooter.vue";
+
 import TheHero from "@/components/TheHero.vue";
 import TheBooks from "@/components/TheBooks.vue";
 import TheMain from "@/components/TheMain.vue";
@@ -60,6 +62,7 @@ export default {
   name: "Home",
   components: {
     TheBooks,
+    TheFooter,
     TheNavbar,
     TheHero,
     TheMain,

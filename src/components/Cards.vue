@@ -1,62 +1,55 @@
 <template>
-  <div class="row row-cols-1 row-cols-md-3 g-3" v-show="false">
-
-
-
-
-    <div class="col" v-for="item in 1" :key="item">
-      <div class="card hover morder">
-        <div class="row">
-          <div class="col-md-3">
-            <img
-              src="https://arastirmanv4.vercel.app/assets/images/logos/archive.png"
-              style="width: 75px"
-              class="card-img-top blur m-1 ml-5"
-              alt="archive"
-            />
+  <div class="container-fluid card  py-2 box-2 my-3">
+    <div class="row gap-0 row-cols-2 row-cols-md-1 row-cols-sm-1 row-cols-lg-3">
+      <div class="col my-1" v-for="item in 9" :key="item">
+        <div class="col">
+          <div class="card hover glass box-2">
+            <div class="row">
+              <div class="col-md-3">
+                <img
+                  src="https://arastirmanv4.vercel.app/assets/images/logos/canadian.png"
+                  style="width: 55px"
+                  class="card-img-top ml-5 "
+                  alt="duke"
+                />
+              </div>
+              <div class="col-md-9">
+                <h5 class="card-title text-warning pt-4">
+                  Duke University Libraries
+                </h5>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-muted">
+                Duke University Libraries, Ottoman-Turkish Literature
+              </p>
+              <span class="text-muted"
+                ><span class="badge bg-primary">Primary</span>&nbsp;<span
+                  class="badge bg-success"
+                  >Success</span
+                >&nbsp;<span class="badge bg-info text-light">Info</span>
+                &nbsp;</span
+              >
+            </div>
           </div>
-          <div class="col-md-9">
-            <h5 class="card-title text-warning pt-4">Internet Archive</h5>
-          </div>
-        </div>
-        <div class="card-body">
-          <p class="card-text text-muted">
-            a non-profit library of millions of free books, movies, software,
-            music, websites, and more
-          </p>
-          <span class="text-muted"
-            ><span class="badge bg-primary">Primary</span>&nbsp;<span
-              class="badge bg-success"
-              >Success</span
-            >&nbsp;<span class="badge bg-info text-light">Info</span
-            >&nbsp;</span
-          >
         </div>
       </div>
+
+      <!-- <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div>
+    <div class="col-4 col-lg-2">Column</div> -->
     </div>
-
-
-
   </div>
 </template>
 
+<script>
+export default {};
+</script>
+
+
 
 <style scoped>
-
-.containerx {
-     padding: 100px 0;
-}
-
-.avatar {
-  width: 30px;
-  border-radius: 50%;
-}
-.avatar-bordered {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  border: white 1px solid;
-}
-.avatar-large {
-  width: 50px;
-}
 </style>
-

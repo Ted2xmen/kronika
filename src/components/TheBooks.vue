@@ -1,8 +1,10 @@
 <template>
   <div>
-    <div class="container-fluid">
-      <div class="col-md-8 fixed">
-        <div class="input-group mb-1">
+    <div class="container-fluid ">
+    
+      <div class="col-10 mx-auto ">
+          <h1>Kronik Arama Bölümü</h1>
+        <div class="input-group mb-1 mt-3  pt-4">
           <input
             v-model="searchInput"
             type="text"
@@ -11,10 +13,13 @@
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
-          <button class="btn btn-danger" type="button" id="button-addon2">
-            Button
-          </button>
+       
         </div>
+
+         <div class="alert alert-info py-3 my-3" role="alert" v-if="searchInput.length > 0">
+           Kayıtlı toplam {{this.$store.state.kronikler.length}} adet eser var. <br>
+             {{filteredBooks.length }} tanesi listeleniyor.
+          </div>
 
         <div class="container" v-if="filteredBooks.length === 0">
           <div class="alert alert-danger py-5 my-5" role="alert">
@@ -32,9 +37,14 @@
           <div class="card profile-card-5">
             <div class="card-img-block">
               <img
-                class="card-img-top box-1"
-                src="https://cdn.islamansiklopedisi.org.tr/gorsel/Belge%20-%20Sahife/tevarih-i-al-i-osman-1.jpg"
+                class="img-fluid card-img-top box-1"
+                :src="item.img"
                 alt="Card image cap"
+                style="width: 280px !important; height: 380px !important; object-fit: cover;"
+                
+              
+              
+                
               />
             </div>
             <div class="card-body">
@@ -166,7 +176,7 @@ export default {
 
   margin: 0 auto;
   position: relative;
-  top: -20px;
+  top: -30px;
 }
 .profile-card-5 .card-img-block img {
   border-radius: 5px;

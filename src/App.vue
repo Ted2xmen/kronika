@@ -12,7 +12,7 @@
 
 
 .home {
-  background-color: #42b983;
+  background-color: #ffffff;
 }
 
 #nav {
