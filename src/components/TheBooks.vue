@@ -1,36 +1,29 @@
 <template>
   <div>
-
-
-
-
-
-
     <div class="container-fluid">
+      <div class="col-md-8 fixed">
+        <div class="input-group mb-1">
+          <input
+            v-model="searchInput"
+            type="text"
+            class="form-control"
+            placeholder="Yazara veya başlığa göre ara..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-danger" type="button" id="button-addon2">
+            Button
+          </button>
+        </div>
 
+        <div class="container" v-if="filteredBooks.length === 0">
+          <div class="alert alert-danger py-5 my-5" role="alert">
+            Aradığınız eser bulunamadı.
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-   <div class="col-md-8 fixed">
-<div class="input-group mb-1">
-  <input v-model="searchInput" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
-  <button class="btn btn-danger" type="button" id="button-addon2">Button</button>
-</div>
-</div>
-
-      <div class="row py-2">
-
-
-
-
-
-
-
-
-        
+      <div class="row">
         <div
           class="col-md-3 mt-4 py-4"
           v-for="(item, index) in filteredBooks"
@@ -54,10 +47,8 @@
                 item.kategori
               }}</span>
               <span class="ms-2 badge bg-warning text-dark">Warning</span>
-              <p class="card-text my-4">
-                {{ item.ozet.slice(0,180) }}...
-              </p>
-              <span><img src="src\assets\archive.png" alt=""></span>
+              <p class="card-text my-4">{{ item.ozet.slice(0, 180) }}...</p>
+              <span><img src="src\assets\archive.png" alt="" /></span>
               <a :href="item.url1" class="btn btn-info">Link</a>
               <button
                 type="button"
@@ -112,9 +103,9 @@
                     <span class="ms-2 badge bg-warning text-dark">Warning</span>
                     <span class="ms-2 badge bg-warning text-dark">Warning</span>
                     <p class="card-text">
-                     {{ modals.ozet }}
+                      {{ modals.ozet }}
                     </p>
-                    
+
                     <a :href="modals.url1" class="btn btn-info">PDF</a>
                   </div>
                 </div>
@@ -146,16 +137,15 @@ export default {
     },
   },
 
-
   computed: {
     filteredBooks() {
-  
       return this.$store.state.kronikler.filter((item) => {
-        return item.baslik.toLowerCase().includes(this.searchInput.toLowerCase());
-           
+        const birlestirdim = item.baslik + item.yazar;
+        return birlestirdim
+          .toLowerCase()
+          .includes(this.searchInput.toLowerCase());
       });
-
-    }
+    },
   },
 };
 </script>
