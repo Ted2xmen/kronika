@@ -11,10 +11,5 @@
     </div>
   </div>
 
-
-
-  
-
-
 </div>
 </template>

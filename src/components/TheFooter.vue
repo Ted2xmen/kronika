@@ -11,7 +11,7 @@
       </div>
 
       <div class="col-2">
-        <h5>Linkler</h5>
+        <h5>Faydalı Linkler</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
           
@@ -19,7 +19,7 @@
       </div>
 
       <div class="col-2">
-        <h5>Section</h5>
+        <h5>İletişim</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
         
