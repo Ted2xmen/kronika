@@ -48,7 +48,7 @@ h1 {
 
 .card-font {
   color: rgb(223, 207, 179);
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .bg-cards {
@@ -120,3 +120,5 @@ h1 {
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
 }
+
+
