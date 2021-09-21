@@ -1,13 +1,18 @@
 import { createStore } from "vuex";
 
 export default createStore({
+
   state: {
 
-
+    searchInput :"",
     reklamOne: "Reklam",
     reklamTwo: "Reklam",
     reklamThree: "Reklam",
     bookData: [],
+    modalData: [],
+
+
+
 
     kronikler: [
  
@@ -33,6 +38,9 @@ export default createStore({
     ],
   },
   mutations: {},
-  actions: {},
+
+  actions: {
+
+  },
   modules: {},
 });

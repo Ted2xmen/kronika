@@ -64,12 +64,12 @@ h1 {
 }
 
 .box-1 {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
   transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-
-  cursor: pointer;
+/* 
+  cursor: pointer; */
 }
 
 .box-1:hover {
