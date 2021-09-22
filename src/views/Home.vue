@@ -1,9 +1,16 @@
 <template>
-  <TheNavbar />
+  <TheNavbar id="top" />
   <TheHero />
   <div class="home container-fluid pb-3">
     <div class="row p-5">
       <div class="col-md-8 align-self-center">
+        <button
+          class="btn-primary btn-lg"
+          href="#kronik"
+          @click.prevent="scrollTo('#kronik')"
+        >
+          Kronik Arama Bölümü
+        </button>
         <TheCardRow />
       </div>
       <div class="col-md-4">
@@ -13,9 +20,17 @@
     <hr class="bg-info" />
     <Cards />
 
-    <TheBooks />
-
+    <div id="kronik">
+      <TheBooks />
+    </div>
     <TheFooter />
+    <button
+      class="btn-primary btn-sm"
+      href="#top"
+      @click.prevent="scrollTo('#top')"
+    >
+      Yukarı Çık
+    </button>
   </div>
 </template>
 
@@ -42,6 +57,12 @@ export default {
     TheMain,
     TheCardRow,
     Cards,
+  },
+
+  methods: {
+    scrollTo(selector) {
+      document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
+    },
   },
 };
 </script>
