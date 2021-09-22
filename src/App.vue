@@ -24,7 +24,6 @@ export default {
 
           for (let key in data) {
             var newData = data[key];
-            //  console.log(newData);
             this.$store.state.bookData.push(newData);
           }
         })

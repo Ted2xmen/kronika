@@ -6,6 +6,6 @@
 
   <button type="button" class="btn btn-warning btn-md ms-3">
     Toplam internet sitesi sayısı
-    <span class="badge bg-dark">{{ this.$store.state.bookData.length }} </span>
+    <span class="badge bg-dark">{{ this.$store.getters.justWeb.length }} </span>
   </button>
 </template>

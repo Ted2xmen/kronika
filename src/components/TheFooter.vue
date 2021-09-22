@@ -1,6 +1,6 @@
 <template>
 
-  <footer class="py-5 container-lg bg-glass text-white ">
+  <footer class="py-5  container-lg bg-glass text-white ">
     <div class="row">
       <div class="col-2">
         <h5>Menu</h5>

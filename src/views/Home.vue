@@ -1,7 +1,7 @@
 <template>
   <TheNavbar />
   <TheHero />
-  <div class="home container-fluid">
+  <div class="home container-fluid pb-3">
     <div class="row p-5">
       <div class="col-md-8 align-self-center">
         <TheCardRow />
@@ -10,8 +10,11 @@
         <TheMain />
       </div>
     </div>
+    <hr class="bg-info" />
     <Cards />
+
     <TheBooks />
+
     <TheFooter />
   </div>
 </template>

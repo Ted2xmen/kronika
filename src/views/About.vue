@@ -3,7 +3,9 @@
     <TheNavbar />
 
     <div class="container py-5">
-      <p>
+      <h2>Kronika.org</h2>
+     
+      <p class="py-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi
         animi, reiciendis vitae labore fuga neque quos, asperiores commodi
         accusantium voluptatibus aperiam dolorem nihil aliquid distinctio
@@ -11,7 +13,7 @@
         atque deleniti.
       </p>
     </div>
-    <TheFooter />
+    <TheFooter v-if="false" />
   </div>
 </template>
 
