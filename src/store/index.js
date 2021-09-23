@@ -14,8 +14,14 @@ export default createStore({
 
   getters:{
     justWeb: state =>{
-      return state.bookData.filter(item => item.year === 1600)
+      return state.bookData.filter(item => item.category === "Web")
     },
+
+    justKronik: state =>{
+      return state.bookData.filter(item => item.category === "Kronik")
+    },
+
+
   },
 
   mutations: {},

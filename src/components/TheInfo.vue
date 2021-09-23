@@ -1,7 +1,7 @@
 <template>
   <button type="button" class="btn btn-warning btn-md">
     Toplam eser sayısı
-    <span class="badge bg-dark">{{ this.$store.state.bookData.length }} </span>
+    <span class="badge bg-dark">{{ this.$store.getters.justKronik.length }} </span>
   </button>
 
   <button type="button" class="btn btn-warning btn-md ms-3">

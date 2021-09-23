@@ -188,7 +188,7 @@ export default {
 
   computed: {
     filteredBooks() {
-      return this.$store.state.bookData.filter((item) => {
+      return this.$store.getters.justKronik.filter((item) => {
         const birlestirdim = item.author + item.title;
         return birlestirdim
           .toLowerCase()

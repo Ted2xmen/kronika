@@ -10,6 +10,7 @@
       
       <div class="col p-1 my-1" v-for="item in this.$store.getters.justWeb" :key="item">
         <div class="col">
+<a :href="item.downloadUrl" class="link" target="_blank">
           <div class="card bg-glass hover" style="border-radius: 5px;">
             <div class="row">
               <div class="col-md-2 pe-5">
@@ -17,7 +18,7 @@
                   :src="item.imageUrl"
                   style="width: 35px; height: 40px; border-radius: 5px;"
                   class="card-img-top ms-0"
-                  alt="duke"
+                  :alt="item.title"
                 />
               </div>
               <div class="col-md-10 ps-0">
@@ -33,6 +34,7 @@
               </p>
             </div>
           </div>
+</a>
         </div>
       </div>
     </div>
