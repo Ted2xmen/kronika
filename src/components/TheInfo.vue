@@ -1,11 +1,3 @@
 <template>
-  <button type="button" class="btn btn-warning btn-md">
-    Toplam eser sayısı
-    <span class="badge bg-dark">{{ this.$store.getters.justKronik.length }} </span>
-  </button>
-
-  <button type="button" class="btn btn-warning btn-md ms-3">
-    Toplam internet sitesi sayısı
-    <span class="badge bg-dark">{{ this.$store.getters.justWeb.length }} </span>
-  </button>
+<div></div>
 </template>

@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="container-fluid glass-1 px-5 py-4 my-3 mx-auto">
-      <h1>Osmanlı Kronikleri</h1>
+      <h1>Osmanlı Kronikleri  <span class="badge bg-dark">{{ this.$store.getters.justKronik.length }} </span></h1>
       <div class="col-6 mx-auto">
         <TheInfo />
         <div class="input-group mb-1 mt-3 pt-4">
-          <Search />
+        <Search />
         </div>
         <div class="py-3 my-3" v-if="this.$store.state.searchInput.length > 0">
           <h3 class="text-white">
@@ -51,7 +51,7 @@
               </h5>
 
               <h6>{{ item.year }}</h6>
-
+<!-- 
               <div class="d-flex justify-content-start pt-1">
                 <span class="ms-2 badge bg-info text-dark">{{
                   item.category[1]
@@ -59,7 +59,7 @@
                 <span class="ms-2 badge bg-light text-dark">{{
                   item.category[0]
                 }}</span>
-              </div>
+              </div> -->
 
               <p class="card-text my-4">{{ item.summary.slice(0, 150) }}...</p>
               <span><img src="src\assets\archive.png" alt="" /></span>

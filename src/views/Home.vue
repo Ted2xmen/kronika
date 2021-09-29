@@ -5,11 +5,11 @@
     <div class="row p-5">
       <div class="col-md-8 align-self-center">
         <button
-          class="btn-primary btn-lg"
+          class="btn btn-outline-primary btn-xs"
           href="#kronik"
           @click.prevent="scrollTo('#kronik')"
         >
-          Kronik Arama Bölümü
+        Kronikler
         </button>
         <TheCardRow />
       </div>
@@ -25,11 +25,11 @@
     </div>
     <TheFooter />
     <button
-      class="btn-primary btn-sm"
+      class="btn btn-outline-primary btn-xs"
       href="#top"
       @click.prevent="scrollTo('#top')"
     >
-      Yukarı Çık
+      <span class="material-icons"> arrow_upward </span>
     </button>
   </div>
 </template>

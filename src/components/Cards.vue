@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-5 py-4 my-3">
-    <h1>Faydalı Siteler</h1>
+    <h1>Faydalı Siteler <span class="badge bg-dark">{{ this.$store.getters.justWeb.length }} </span></h1> 
  
     <div
       class="
