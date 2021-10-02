@@ -8,6 +8,24 @@
           <p class="hover-4-description text-uppercase mb-0 small">Road over the Balkan Mountain</p>
         </div>
       </div>
+ 
+<div class="card my-2 box-1 ">
+  <div class="card-body ">
+    Faydalı Siteler <span class="badge bg-dark">{{ this.$store.getters.justWeb.length }} </span>
+  </div>
+</div>
+
+<div class="card my-2 box-1">
+  <div class="card-body ">
+    İndirilebilir Osmanlı Kronikleri <span class="badge bg-dark">{{ this.$store.getters.justKronik.length }} </span>
+  </div>
+</div>
+
+<div class="card my-2 box-1 ">
+  <div class="card-body">
+    Biyografiler <span class="badge bg-dark">2</span>
+  </div>
+</div>
 
 
   </div>
