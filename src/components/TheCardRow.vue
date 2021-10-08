@@ -11,7 +11,7 @@
     </div>
   </div> -->
 
-          <div class="  col-lg-4 col-md-6 col-sm-10  px-0 py-1" v-for="i in 6" :key="i">
+          <div class="  col-lg-4 col-md-6 col-sm-10 py-1" v-for="i in 6" :key="i">
             <div class="image  "> <img src="https://pbs.twimg.com/profile_images/446268872031612929/F9WDwP7F_400x400.jpeg" alt="">
                 <div class="overlay ">
                     <p><a class="text-white" href="http://www.enginozendes.com/en/homepage/"> Engin Özendes</a>{{i}}</p>
@@ -32,7 +32,7 @@
 <style scoped>
 
 img {
-    width: 70%;
+    width: 50%;
     /* height: 300px */
 }
 .container {

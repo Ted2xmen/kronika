@@ -63,9 +63,7 @@
 
               <p class="card-text my-4">{{ item.summary.slice(0, 150) }}...</p>
               <span><img src="src\assets\archive.png" alt="" /></span>
-              <a :href="item.downloadUrl" target="_href" class="btn btn-warning">
-                İndir
-              </a>
+          
 
               <button
                 type="button"
@@ -125,13 +123,13 @@
                     <h6 class="card-title">
                       {{ modals.author }}
                       <span>
-                        <a :href="modals.sourceUrl"
-                          class="btn btn-danger btn-sm">
-                          Kaynak</a>
-                        
                         <a :href="modals.downloadUrl"
+                          class="btn btn-danger btn-sm">
+                          İndir</a>
+                        
+                        <!-- <a :href="modals.downloadUrl"
                           class="btn btn-warning ms-2 btn-sm"
-                          >PDF</a>
+                          >PDF</a> -->
                       </span>
                     </h6>
 
