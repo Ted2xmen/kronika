@@ -2,7 +2,7 @@
   <TheNavbar id="top" />
   <TheHero />
   <div class="home container-fluid pb-3">
-    <div class="row p-5">
+    <div class="row p-1">
       <div class="col-md-8 align-self-center">
         <button
           class="btn btn-outline-primary btn-xs"
@@ -11,6 +11,7 @@
         >
         Kronikler
         </button>
+        
         <TheCardRow />
       </div>
       <div class="col-md-4">
