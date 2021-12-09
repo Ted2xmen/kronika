@@ -17,12 +17,12 @@
                 <img
                   :src="item.imageUrl"
                   style="width: 35px; height: 40px; border-radius: 5px;"
-                  class="card-img-top ms-0"
+                  class="card-img-top ms-0 me-1"
                   :alt="item.title"
                 />
               </div>
               <div class="col-md-10 ps-0">
-                <h6 class="card-title text-warning ms-1 ps-0 pt-3">
+                <h6 class="card-title text-warning ms-3 ps-1 pt-3">
                 {{item.title}}
                 </h6>
               </div>

@@ -5,9 +5,9 @@ export default createStore({
   state: {
 
     searchInput :"",
-    reklamOne: "Reklam",
-    reklamTwo: "Reklam",
-    reklamThree: "Reklam",
+    reklamOne: "",
+    reklamTwo: "",
+    reklamThree: "",
     bookData: [], // app.vue 
    
   },
