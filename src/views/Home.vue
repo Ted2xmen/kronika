@@ -4,18 +4,18 @@
   <div class="home container-fluid pb-3">
     <div class="row p-1">
       <div class="col-md-8 align-self-center">
-        <button
+        <!-- <button
           class="btn btn-outline-primary btn-xs"
           href="#kronik"
           @click.prevent="scrollTo('#kronik')"
         >
         Kronikler
-        </button>
+        </button> -->
         
-        <TheCardRow />
+        <!-- <TheCardRow /> -->
       </div>
       <div class="col-md-4">
-        <TheMain />
+        <!-- <TheMain /> -->
       </div>
     </div>
     <hr class="bg-info" />
@@ -25,13 +25,13 @@
       <TheBooks />
     </div>
     <TheFooter />
-    <button
+    <!-- <button
       class="btn btn-outline-primary btn-xs"
       href="#top"
       @click.prevent="scrollTo('#top')"
     >
       <span class="material-icons"> arrow_upward </span>
-    </button>
+    </button> -->
   </div>
 </template>
 
@@ -44,8 +44,8 @@ import TheNavbar from "@/components/TheNavbar.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheHero from "@/components/TheHero.vue";
 import TheBooks from "@/components/TheBooks.vue";
-import TheMain from "@/components/TheMain.vue";
-import TheCardRow from "@/components/TheCardRow.vue";
+// import TheMain from "@/components/TheMain.vue";
+// import TheCardRow from "@/components/TheCardRow.vue";
 import Cards from "@/components/Cards.vue";
 
 export default {
@@ -55,8 +55,8 @@ export default {
     TheFooter,
     TheNavbar,
     TheHero,
-    TheMain,
-    TheCardRow,
+    // TheMain,
+    // TheCardRow,
     Cards,
   },
 
