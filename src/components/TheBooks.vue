@@ -1,11 +1,16 @@
 <template>
   <div>
     <div class="container-fluid glass-1 px-5 py-4 my-3 mx-auto">
-      <h1>Osmanlı Kronikleri  <span class="badge bg-dark">{{ this.$store.getters.justKronik.length }} </span></h1>
+      <h1>
+        Osmanlı Kronikleri
+        <span class="badge bg-dark"
+          >{{ this.$store.getters.justKronik.length }}
+        </span>
+      </h1>
       <div class="col-6 mx-auto">
         <TheInfo />
         <div class="input-group mb-1 mt-3 pt-4">
-        <Search />
+          <Search />
         </div>
         <div class="py-3 my-3" v-if="this.$store.state.searchInput.length > 0">
           <h3 class="text-white">
@@ -22,61 +27,43 @@
 
       <div class="row">
         <div
-          class="col-md-3 mt-4 py-4"
+          class="col-md-4 mt-4 py-4"
           v-for="(item, index) in filteredBooks"
-          :key="index">
-        
-          <div
-            class="card profile-card-5 book-color"
-            style="border-radius: 25px">
-          
-            <div class="card-img-block">
-              <img
-                class="img-fluid card-img-top box-1"
-                :src="item.imageUrl"
-                :alt="item.title"
-                style="
-                  width: 200px !important;
-                  height: 300px !important;
-                  object-fit: cover;
-                  object-position: 1px 1px;
-                  border-radius: 25px;
-                "
-              />
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">{{ item.title }}</h4>
-              <h5 class="card-title">
-                {{ item.author }}
-              </h5>
+          :key="index"
+        >
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img
+                  width="150"
+                  :src="item.imageUrl"
+                  :alt="item.title"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    {{ item.author }}
+                    <small class="text-muted"> {{ item.year }}</small>
+                  </h5>
 
-              <h6>{{ item.year }}</h6>
-<!-- 
-              <div class="d-flex justify-content-start pt-1">
-                <span class="ms-2 badge bg-info text-dark">{{
-                  item.category[1]
-                }}</span>
-                <span class="ms-2 badge bg-light text-dark">{{
-                  item.category[0]
-                }}</span>
-              </div> -->
-
-              <p class="card-text my-4">{{ item.summary.slice(0, 150) }}...</p>
-              <span><img src="src\assets\archive.png" alt="" /></span>
-          
-
-              <button
-                type="button"
-                class="btn btn-success ms-2"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                @click="showModal(item)">
-                Detaylı Bilgi
-              </button>
+                  <h6 class="card-title">{{ item.title }}</h6>
+                  <p class="card-text">{{ item.summary.slice(0, 120) }}...</p>
+                  <p class="card-text"></p>
+                  <a
+                    class="btn btn-sm btn-outline-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    @click="showModal(item)"
+                  >
+                    Detay
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
         <!-- modal -->
 
         <div
@@ -84,8 +71,8 @@
           id="exampleModal"
           tabindex="-1"
           aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-        
+          aria-hidden="true"
+        >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -99,7 +86,7 @@
                   aria-label="Close"
                 ></button>
               </div>
-              
+
               <div class="alert alert-success" role="alert">
                 {{ modals.reklamTwo }}
               </div>
@@ -115,7 +102,9 @@
                         width: 280px !important;
                         height: 380px !important;
                         object-fit: cover;
-                        object-position: 1px 1px;"/>
+                        object-position: 1px 1px;
+                      "
+                    />
                   </div>
 
                   <div class="card-body">
@@ -123,10 +112,13 @@
                     <h6 class="card-title">
                       {{ modals.author }}
                       <span>
-                        <a :href="modals.downloadUrl"
-                          class="btn btn-danger btn-sm">
-                          İndir</a>
-                        
+                        <a
+                          :href="modals.downloadUrl"
+                          class="btn btn-danger btn-sm"
+                        >
+                          İndir</a
+                        >
+
                         <!-- <a :href="modals.downloadUrl"
                           class="btn btn-warning ms-2 btn-sm"
                           >PDF</a> -->
@@ -156,7 +148,6 @@
         </div>
 
         <!-- modal -->
-
       </div>
     </div>
   </div>
