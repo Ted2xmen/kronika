@@ -11,6 +11,9 @@
         <li class="nav-item">
              <router-link class="nav-link" to="/">Anasayfa</router-link>
         </li>
+              <li class="nav-item">
+         <router-link class="nav-link" to="/newhome">Home v2</router-link>
+        </li>
         <li class="nav-item">
          <router-link class="nav-link" to="/about">Hakkında</router-link>
         </li>

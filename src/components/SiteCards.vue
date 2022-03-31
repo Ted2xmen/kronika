@@ -1,24 +1,15 @@
 <template>
-  <div class="container-fluid px-5 py-4 my-3">
-    <h1>
-      Faydalı Siteler
-      <span class="badge bg-dark"
-        >{{ this.$store.getters.justWeb.length }}
-      </span>
-    </h1>
-
+  <div class="container-fluid">
     <div
       class="
         row
         gap-0
         row-cols-1 row-cols-md-2 row-cols-sm-1 row-cols-lg-3 row-cols-xl-4
-      "
-    >
+      ">
       <div
         class="col p-1 my-1"
         v-for="item in this.$store.getters.justWeb"
-        :key="item"
-      >
+        :key="item">
         <div class="col">
           <div class="card hover morder radius">
             <div class="row">
@@ -63,6 +54,6 @@
 
 <script>
 export default {
-  name: "Cards",
+  name: "SiteCards",
 };
 </script>

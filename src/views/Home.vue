@@ -1,37 +1,28 @@
 <template>
   <TheNavbar id="top" />
+  <Button buttonTitle="Kronikler" divId="#kronik" />
+    <Button buttonTitle="Internet Siteleri" divId="#websites" />
+
   <TheHero />
   <div class="home container-fluid pb-3">
     <div class="row p-1">
       <div class="col-md-8 align-self-center">
-        <!-- <button
-          class="btn btn-outline-primary btn-xs"
-          href="#kronik"
-          @click.prevent="scrollTo('#kronik')"
-        >
-        Kronikler
-        </button> -->
-        
-        <!-- <TheCardRow /> -->
+        <TheCardRow />
       </div>
-      <div class="col-md-4">
-        <!-- <TheMain /> -->
-      </div>
+     
     </div>
-    <hr class="bg-info" />
-    <Cards />
+    <SiteCards />
 
     <div id="kronik">
+      <Title sectionTitle="Kronikler" :arrayLength="this.$store.getters.justKronik.length" />
+      <TheBooks />
+    </div>
+    <div id="websites">
+      <Title sectionTitle="Internet Siteleri" :arrayLength="this.$store.getters.justWeb.length" />
       <TheBooks />
     </div>
     <TheFooter />
-    <!-- <button
-      class="btn btn-outline-primary btn-xs"
-      href="#top"
-      @click.prevent="scrollTo('#top')"
-    >
-      <span class="material-icons"> arrow_upward </span>
-    </button> -->
+    <Button buttonTitle="Yukarı" divId="#top" />
   </div>
 </template>
 
@@ -44,9 +35,10 @@ import TheNavbar from "@/components/TheNavbar.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheHero from "@/components/TheHero.vue";
 import TheBooks from "@/components/TheBooks.vue";
-// import TheMain from "@/components/TheMain.vue";
-// import TheCardRow from "@/components/TheCardRow.vue";
-import Cards from "@/components/Cards.vue";
+import SiteCards from "@/components/SiteCards.vue";
+// SHARED
+import Button from "@/components/shared/Button.vue";
+import Title from "@/components/shared/Title.vue";
 
 export default {
   name: "Home",
@@ -55,15 +47,9 @@ export default {
     TheFooter,
     TheNavbar,
     TheHero,
-    // TheMain,
-    // TheCardRow,
-    Cards,
-  },
-
-  methods: {
-    scrollTo(selector) {
-      document.querySelector(selector).scrollIntoView({ behavior: "smooth" });
-    },
+    Button,
+    SiteCards,
+    Title,
   },
 };
 </script>

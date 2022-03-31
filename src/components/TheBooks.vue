@@ -1,12 +1,7 @@
 <template>
   <div>
     <div class="container-fluid glass-1 px-5 py-4 my-3 mx-auto">
-      <h1>
-        Osmanlı Kronikleri
-        <span class="badge bg-dark"
-          >{{ this.$store.getters.justKronik.length }}
-        </span>
-      </h1>
+
       <div class="col-6 mx-auto">
         <TheInfo />
         <div class="input-group mb-1 mt-3 pt-4">
