@@ -1,21 +1,18 @@
 <template>
-  <div class="row mx-auto d-flex justify-items-center gap-1">
-    <div class="col-sm-3 hover" v-for="item in 3" :key="item">
-      <div  class="card box-4 my-1 pt-1 bg-dark text-white">
-        <div class="card-body">
-          <h6 class="card-title">Special title treatment</h6>
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-          </p>
-          <a href="#" class="btn btn-primary btn-sm">Kronik Arama Bölümü</a>
-        </div>
-      </div>
+
+  
+    <div class="row mx-auto d-flex justify-items-center gap-3">
+    <div class="col-md-4 border">
+      Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, quaerat temporibus cupiditate dolorum quia esse libero, culpa eius sed expedita nihil dolore eaque aut laboriosam aliquid quis hic quam?    
     </div>
+
+       <div class="col hover border">
+     a Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, quaerat temporibus cupiditate dolorum quia esse libero, culpa eius sed expedita nihil dolore eaque aut laboriosam aliquid quis hic quam?    
+    </div>
+
+    
   </div>
 </template>
-
-
 
 
 

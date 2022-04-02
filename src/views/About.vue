@@ -4,6 +4,7 @@
 
     <div class="container py-5">
       <h2>Kronika.org</h2>
+      <h4 class="gradient">Kronika</h4>
       <p class="py-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi
         animi, reiciendis vitae labore fuga neque quos, asperiores commodi

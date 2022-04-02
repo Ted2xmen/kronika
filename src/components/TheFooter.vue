@@ -1,6 +1,5 @@
 <template>
-
-  <footer class="py-5  container-lg bg-glass text-white ">
+  <footer class="container-md py-4 bg-glass text-white">
     <div class="row">
       <div class="col-2">
         <h5>Menu</h5>
@@ -38,11 +37,20 @@
         </form>
       </div>
     </div>
-
     <div class="d-flex justify-content-between py-2 my-2 border-top">
       <p>&copy; 2021 KRONIKA, All rights reserved.</p>
-  
+          <Button buttonTitle="Yukarı" divId="#top" />
     </div>
   </footer>
-
 </template>
+
+<script>
+import Button from "@/components/shared/Button.vue";
+export default {
+  name: "TheFooter",
+  components: {
+  Button
+  },
+  
+}
+</script>

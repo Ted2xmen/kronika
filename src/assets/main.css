@@ -23,6 +23,15 @@ h1 {
   font-weight: 600;
 }
 
+.gradient {
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(38, 38, 38), rgb(6, 78, 59),rgb(120, 113, 108));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* linear-gradient(to left top, rgb(163, 230, 53), rgb(250, 204, 21), rgb(127, 29, 29)) */
+
 .bg-nav {
   background-color: var(--t2);
   color: wheat;
