@@ -11,6 +11,7 @@
       <section id="suggested" class="my-4">
         <div class="p-2 m-2">
           <Title
+            icon="star"
             sectionTitle="Önerilen Kaynaklar"
             :arrayLength="this.$store.getters.justWeb.length"
           />
@@ -25,6 +26,7 @@
       <section id="usefulsites" class="">
         <div class="p-2 m-2 my-4">
           <Title
+            icon="search"
             sectionTitle="Literatür Taraması"
             :arrayLength="this.$store.getters.justWeb.length"
           />
@@ -35,6 +37,7 @@
       <section id="kronikler">
         <div class="p-2 m-2">
           <Title
+            icon="book"
             sectionTitle="Osmanlı Kronikleri"
             :arrayLength="this.$store.getters.justWeb.length"
           />
