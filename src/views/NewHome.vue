@@ -16,13 +16,15 @@
             :arrayLength="this.$store.getters.justWeb.length"
           />
           <TheSuggested />
+          <section>
+            <Qua />
+          </section>
+          <div class="container-md">
+            <Title class="py-2" icon="book" sectionTitle="Yeni Çıkanlar" />
+            <Slider />
+          </div>
         </div>
       </section>
-
-      <section>
-        <Qua />
-      </section>
-
       <section id="usefulsites" class="">
         <div class="p-2 m-2 my-4">
           <Title
@@ -60,13 +62,12 @@ import TheFooter from "@/components/TheFooter.vue";
 import NavRow from "@/components/NavRow.vue";
 import TheInfo from "@/components/TheInfo.vue";
 
-
 // components
 import TheSuggested from "@/components/TheSuggested.vue";
 import SiteCards from "@/components/SiteCards.vue";
 import TheBooks from "@/components/TheBooks.vue";
 import Qua from "@/components/Qua.vue";
-
+import Slider from "@/components/Slider.vue";
 
 // shared
 import Title from "@/components/shared/Title.vue";
@@ -84,6 +85,7 @@ export default {
     TheBooks,
     Title,
     Qua,
+    Slider,
   },
 };
 </script>

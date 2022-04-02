@@ -1,20 +1,26 @@
 <template>
 
   
-    <div class="row mx-auto d-flex justify-items-center gap-3">
+    <div class="row mx-auto d-flex justify-items-center mx-auto gap-2 py-4">
     <div class="col-md-4 border">
       Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, quaerat temporibus cupiditate dolorum quia esse libero, culpa eius sed expedita nihil dolore eaque aut laboriosam aliquid quis hic quam?    
     </div>
-
-       <div class="col hover border">
-     a Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, quaerat temporibus cupiditate dolorum quia esse libero, culpa eius sed expedita nihil dolore eaque aut laboriosam aliquid quis hic quam?    
+   <div class="col-md-7 border">
+      Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, molestias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, quaerat temporibus cupiditate dolorum quia esse libero, culpa eius sed expedita nihil dolore eaque aut laboriosam aliquid quis hic quam?    
     </div>
 
     
   </div>
 </template>
 
+<script>
 
+export default {
+  name: "TheSuggested",
+  components: { 
+  }
+}
+</script>
 
 
 <style scoped>
