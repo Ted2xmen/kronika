@@ -39,6 +39,8 @@
     </div>
     <div class="d-flex justify-content-between py-2 my-2 border-top">
       <p>&copy; 2021 KRONIKA, All rights reserved.</p>
+        <button class="btn btn-sm">  <vue-feather type="arrow-up-circle"></vue-feather>
+</button>
           <Button buttonTitle="Yukarı" divId="#top" />
     </div>
   </footer>

@@ -3,17 +3,17 @@
     <div class="container-fluid  px-5 py-4 my-3 mx-auto">
 
       <div class="col-6 mx-auto">
-        <div class="input-group mb-1 mt-3 pt-4">
+        <div class="input-group mb-1 mt-2 pt-3">
           <Search />
         </div>
         <div class="py-3 my-3" v-if="this.$store.state.searchInput.length > 0">
-          <h3 class="text-white">
+          <h3 class="text-dark text-center">
             Listeleniyor
             <span class="badge bg-dark">{{ filteredBooks.length }}</span>
           </h3>
         </div>
         <div class="container" v-if="filteredBooks.length === 0">
-          <div class="alert alert-danger py-5 my-5" role="alert">
+          <div class="alert alert-danger py-2 my-2" role="alert">
             <b>Aradığınız eser bulunamadı.</b>
           </div>
         </div>

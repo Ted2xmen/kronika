@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-dark">
+    <h3 class="text-dark text-center py-4">
       <vue-feather :type="icon"></vue-feather>
       {{ sectionTitle }}  
         <span class="badge bg-dark">

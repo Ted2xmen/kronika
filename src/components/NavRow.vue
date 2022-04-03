@@ -4,7 +4,7 @@
       v-for="item in nawRow"
       :key="item.href"
       :buttonTitle="item.title"
-      divId="#footer"
+      :divId="item.href"
     />
   </div>
 </template>
@@ -20,10 +20,10 @@ export default {
   data() {
     return {
       nawRow: [
-        { title: "#kronikler", href: "#kronik" },
+        { title: "#kronikler", href: "#kronikler" },
         { title: "#internetsiteleri", href: "#footer" },
-        { title: "#koleksiyonlar", href: "#5" },
-        { title: "#yazmaeserler", href: "#13" },
+        { title: "#koleksiyonlar", href: "#koleksiyonlar" },
+        { title: "#yazmaeserler", href: "#yazmaeserler" },
         { title: "#kitaplar", href: "#s3uggest" },
         { title: "#müzeler", href: "#foo6ter" },
       ],

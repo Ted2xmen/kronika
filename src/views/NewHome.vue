@@ -29,7 +29,7 @@
             <Qua class="py-5" />
           </section>
 
-<section>
+<section id="koleksiyonlar">
   <div>
     <Title icon="book" class="py-2" sectionTitle="Koleksiyonlar" />
     <Collections />
@@ -49,7 +49,7 @@
 
 
       <section id="kronikler">
-        <div class="p-2 m-2">
+        <div class="p-1 m-1">
           <Title
             icon="book"
             sectionTitle="Osmanlı Kronikleri"
