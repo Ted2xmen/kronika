@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2 class="text-info">
+    <h3 class="text-dark">
       <vue-feather :type="icon"></vue-feather>
       {{ sectionTitle }}  
         <span class="badge bg-dark">
         {{ arrayLength }}
         </span>
-        </h2>
+        </h3>
   </div>
 </template>
 

@@ -72,6 +72,15 @@ h1 {
   border-radius: 10px;
 }
 
+  .morder {
+    border: 1px solid;
+    border-color: #222e3c;
+  }
+
+  .radius {
+    border-radius: 10px;
+  }
+
 .box-1 {
   
   transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
@@ -150,3 +159,18 @@ h1 {
 }
 
 
+/* vue3-carousel custom css */
+.carousel__next,
+.carousel__prev {
+  background-color: black !important;
+}
+
+.carousel__prev--in-active,
+.carousel__next--in-active {
+  display: none;
+}
+
+.carousel {
+  margin: 2px !important;
+    padding: 2px !important;
+}

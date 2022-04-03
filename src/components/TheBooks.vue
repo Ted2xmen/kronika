@@ -1,9 +1,8 @@
 <template>
   <div>
-    <div class="container-fluid glass-1 px-5 py-4 my-3 mx-auto">
+    <div class="container-fluid  px-5 py-4 my-3 mx-auto">
 
       <div class="col-6 mx-auto">
-        <TheInfo />
         <div class="input-group mb-1 mt-3 pt-4">
           <Search />
         </div>
@@ -149,13 +148,11 @@
 </template>
 
 <script>
-import TheInfo from "./TheInfo.vue";
 import Search from "./Search.vue";
 
 export default {
   name: "TheBooks",
   components: {
-    TheInfo,
     Search,
   },
   data() {

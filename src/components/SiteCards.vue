@@ -4,13 +4,15 @@
       class="
         row
         gap-0
-        row-cols-1 row-cols-md-2 row-cols-sm-1 row-cols-lg-3 row-cols-xl-4
-      ">
+        row-cols-1 row-cols-md-2 row-cols-sm-1 row-cols-lg-3 row-cols-xl-3
+      "
+    >
       <div
         class="col p-1 my-1"
         v-for="item in this.$store.getters.justWeb"
-        :key="item">
-        <div class="col">
+        :key="item"
+      >
+        <!-- <div class="col">
           <div class="card hover morder radius">
             <div class="row">
               <div class="col-md-3">
@@ -43,7 +45,26 @@
               >
             </div>
           </div>
+        </div> -->
+        <a :href="item.downloadUrl" class="link text-dark">
+        <div class="col shadow-sm">
+          <div class="hover morder radius">
+            <div class="row">
+              <div class="col-md-2 text-center mt-3">
+                <vue-feather type="link"></vue-feather>
+              </div>
+              <div class="col-md-8">
+                <h6 class="card-title pt-3">{{ item.title }}</h6>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-muted">
+                {{ item.summary.slice(0, 80) }}...
+              </p>
+            </div>
+          </div>
         </div>
+        </a>
       </div>
     </div>
   </div>

@@ -2,14 +2,10 @@
   <div class="row">
     <div class="col-md-8 d-sm-none d-md-block d-none d-sm-block">
       <Carousel :itemsToShow="4" :autoplay="3000" :wrapAround="true">
-        <Slide v-for="slide in 10" :key="slide">
+        <Slide v-for="slide in this.$store.state.sliderBooks" :key="slide">
           <div class="carousel__item">
             <a href="">
-              <img
-                src="https://media.babil.com/kitap/0460046_yazarlarevi-cinayeti_320_220523.jpeg"
-                width="120"
-                alt=""
-              />
+              <img :src="slide.img" width="120" alt="" />
             </a>
           </div>
         </Slide>
@@ -17,11 +13,15 @@
         ...
       </Carousel>
     </div>
-    <div class="col bg-secondary">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-      necessitatibus maxime nobis alias, nemo neque quod dolor quis eveniet
-      cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Accusantium, placeat!
+    <div class="col">
+      <a href="http://ekitap.yek.gov.tr/default.aspx">
+        <img
+          src="http://ekitap.yek.gov.tr/uploads/banner_002.jpg"
+          class="img-fluid"
+          alt=""
+        />
+      </a>
+      <!-- <img src="http://yazmalar.gov.tr/public/theme/img/logo.png" alt=""> -->
     </div>
   </div>
 </template>

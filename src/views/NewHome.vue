@@ -1,13 +1,17 @@
 <template>
   <div class="main">
-    <section>
+
+
+
+    <section id="head">
       <TheNavbar id="top" />
       <TheHero />
       <NavRow />
       <TheInfo />
     </section>
 
-    <section id="bigsection" class="container-lg">
+  <section id="big" class="container-lg">
+
       <section id="suggested" class="my-4">
         <div class="p-2 m-2">
           <Title
@@ -16,15 +20,22 @@
             :arrayLength="this.$store.getters.justWeb.length"
           />
           <TheSuggested />
-          <section>
-            <Qua />
-          </section>
-          <div class="container-md">
-            <Title class="py-2" icon="book" sectionTitle="Yeni Çıkanlar" />
-            <Slider />
-          </div>
-        </div>
+         </div>
       </section>
+
+
+          <section id="quo" v-if="true">
+            <button>Göster</button>
+            <Qua class="py-5" />
+          </section>
+
+<section>
+  <div>
+    <Title icon="book" class="py-2" sectionTitle="Koleksiyonlar" />
+    <Collections />
+  </div>
+</section>
+
       <section id="usefulsites" class="">
         <div class="p-2 m-2 my-4">
           <Title
@@ -36,6 +47,7 @@
         </div>
       </section>
 
+
       <section id="kronikler">
         <div class="p-2 m-2">
           <Title
@@ -46,11 +58,22 @@
           <TheBooks />
         </div>
       </section>
-    </section>
+
+    <section id="yazmaeserler" class="my-4">
+          <div class="container-md">
+            <Title class="py-2" icon="book" sectionTitle="Türkiye Yazma Eserler Kurumu" />
+            <Slider />
+          </div>
+      </section>
+
+</section>
 
     <section id="footer" v-if="true" class="py-4">
       <TheFooter />
     </section>
+
+
+
   </div>
 </template>
 
@@ -68,6 +91,8 @@ import SiteCards from "@/components/SiteCards.vue";
 import TheBooks from "@/components/TheBooks.vue";
 import Qua from "@/components/Qua.vue";
 import Slider from "@/components/Slider.vue";
+import Collections from "@/components/Collections.vue";
+
 
 // shared
 import Title from "@/components/shared/Title.vue";
@@ -85,6 +110,7 @@ export default {
     TheBooks,
     Title,
     Qua,
+    Collections,
     Slider,
   },
 };

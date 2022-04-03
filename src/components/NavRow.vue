@@ -21,14 +21,11 @@ export default {
     return {
       nawRow: [
         { title: "#kronikler", href: "#kronik" },
-        { title: "#öneriler", href: "#suggest" },
-        { title: "#iletişim", href: "#footer" },
-        { title: "#kronikler", href: "#3" },
-        { title: "#öneriler", href: "#5" },
-        { title: "#iletişimasdasdasd", href: "#13" },
-        { title: "#kronikler", href: "#kro5nik" },
-        { title: "#önerilerasdasdsada", href: "#s3uggest" },
-        { title: "#iletişim", href: "#foo6ter" },
+        { title: "#internetsiteleri", href: "#footer" },
+        { title: "#koleksiyonlar", href: "#5" },
+        { title: "#yazmaeserler", href: "#13" },
+        { title: "#kitaplar", href: "#s3uggest" },
+        { title: "#müzeler", href: "#foo6ter" },
       ],
     };
   },
