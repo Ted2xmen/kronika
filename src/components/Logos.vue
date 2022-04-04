@@ -1,13 +1,13 @@
 <template>
   <div class="row mx-auto d-flex justify-items-center mx-auto gap-2 py-4">
-    <div class="col-md-6 border">
-      <img src="http://www.kadisicilleri.org/images/resim1.jpg" alt="" />
+    <div class="col-md-6 ">
+      <img src="http://www.kadisicilleri.org/images/resim1.jpg" class="img-fluid"  alt="" />
+
+            
+
     </div>
-    <div class="col-md-5 border">
-      <img
-        src="https://2.bp.blogspot.com/-befed9Id8Ag/WFlWnD4fuqI/AAAAAAAAJHE/X9mI3KzPgY4rNMKb4QwQVD0y48BX1GccwCLcB/s1000/revolvingbanner4hamse7.png"
-        alt=""
-      />
+    <div class="col-md-5 ">
+     
     </div>
   </div>
 </template>

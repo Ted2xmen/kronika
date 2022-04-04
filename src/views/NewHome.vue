@@ -24,10 +24,17 @@
       </section>
 
 
-          <section id="quo" v-if="true">
-            <button>Göster</button>
+          <section id="quo">
             <Qua class="py-5" />
           </section>
+
+
+<section id="kutuphaneler">
+  <div>
+    <Title icon="book" class="py-2" sectionTitle="Kütüphaneler" />
+    <Libs />
+  </div>
+</section>
 
 <section id="koleksiyonlar">
   <div>
@@ -35,6 +42,15 @@
     <Collections />
   </div>
 </section>
+
+<section id="logos">
+  <div>
+    <Title icon="book" class="py-2" sectionTitle="Siteler" />
+    <Logos />
+  </div>
+</section>
+
+
 
       <section id="usefulsites" class="">
         <div class="p-2 m-2 my-4">
@@ -86,6 +102,8 @@ import NavRow from "@/components/NavRow.vue";
 import TheInfo from "@/components/TheInfo.vue";
 
 // components
+import Logos from "@/components/Logos.vue";
+import Libs from "@/components/Libs.vue";
 import TheSuggested from "@/components/TheSuggested.vue";
 import SiteCards from "@/components/SiteCards.vue";
 import TheBooks from "@/components/TheBooks.vue";
@@ -112,6 +130,8 @@ export default {
     Qua,
     Collections,
     Slider,
+    Libs,
+    Logos
   },
 };
 </script>

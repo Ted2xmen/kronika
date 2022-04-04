@@ -5,42 +5,35 @@
         <h5>Menu</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İletişim</a></li>
           
         </ul>
       </div>
 
       <div class="col-2">
-        <h5>Faydalı Linkler</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          
+          <li> <img
+        src="https://2.bp.blogspot.com/-befed9Id8Ag/WFlWnD4fuqI/AAAAAAAAJHE/X9mI3KzPgY4rNMKb4QwQVD0y48BX1GccwCLcB/s1000/revolvingbanner4hamse7.png"
+        alt="" class="img-fluid"
+      /></li>
+     
         </ul>
       </div>
 
       <div class="col-2">
-        <h5>İletişim</h5>
+   
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li><img src="https://kutuphaneden.vercel.app/assets/oner.png"  class="img-fluid" alt=""></li>
         
         </ul>
       </div>
 
       <div class="col-4 offset-1">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of whats new and exciting from us.</p>
-          <div class="d-flex w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
-          </div>
-        </form>
       </div>
     </div>
     <div class="d-flex justify-content-between py-2 my-2 border-top">
-      <p>&copy; 2021 KRONIKA, All rights reserved.</p>
-        <button class="btn btn-sm">  <vue-feather type="arrow-up-circle"></vue-feather>
-</button>
+      <p>&copy; 2021 KRONIKA, All rights reserved. </p>
           <Button buttonTitle="Yukarı" divId="#top" />
     </div>
   </footer>
