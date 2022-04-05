@@ -12,8 +12,7 @@ export default createStore({
         name: " EL-MENHELÜ'L-FÂİZ ",
         url:
           "http://ekitap.yek.gov.tr/urun/el-menhelu-l-faiz_764.aspx?CatId=279",
-        img:
-          "http://ekitap.yek.gov.tr/uploads/productsimages/2e7b9646-bee3-4e52-9ebd-48cb20b07b09.jpeg",
+        img: "https://library.ircica.org/images/logo.png",
       },
       {
         name: "  TAHRÎRU USÛLİ’L-HENDESE VE’L-HİSÂB  ",

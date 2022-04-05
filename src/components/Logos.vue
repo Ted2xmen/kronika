@@ -1,70 +1,64 @@
 <template>
-  <div class="row mx-auto d-flex justify-items-center mx-auto gap-2 py-4">
-    <div class="col-md-6 ">
-      <img src="http://www.kadisicilleri.org/images/resim1.jpg" class="img-fluid"  alt="" />
-
-            
-
+  <div class="row">
+        <div class="col">
+      <a href="http://ekitap.yek.gov.tr/default.aspx">
+        <img
+          src="http://www.kadisicilleri.org/images/resim1.jpg"
+          class="img-fluid"
+          width="300"
+          alt=""
+        />
+      </a>
+      <!-- <img src="http://yazmalar.gov.tr/public/theme/img/logo.png" alt=""> -->
     </div>
-    <div class="col-md-5 ">
-     
+    <div class="col-md-9 d-sm-none d-md-block d-none d-sm-block">
+      <Carousel :itemsToShow="5" :autoplay="3000" :wrapAround="true">
+        <Slide v-for="slide in 10" :key="slide">
+          <div class="carousel__item">
+            <a href="">
+              <img src="https://library.ircica.org/images/logo.png" width="190" alt="" />
+            </a>
+          </div>
+        </Slide>
+
+        ...
+      </Carousel>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: "TheSuggested",
-  components: {},
-};
+import { defineComponent } from "vue";
+import { Carousel, Slide } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
+
+export default defineComponent({
+  name: "Autoplay",
+  components: {
+    Carousel,
+    Slide,
+  },
+});
 </script>
 
-
 <style scoped>
-img {
-  width: 50%;
-  /* height: 300px */
-}
-.container {
-  margin: 5px auto;
-}
-
-.image {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.image .overlay {
-  position: absolute;
-  bottom: 0;
-  padding-left: 25px;
-  padding-top: 15px;
-  width: 70%;
-  color: white;
-  font-size: 20px;
-  z-index: 5;
-}
-
-.image .overlay::before {
-  content: "";
-  background: rgb(34, 30, 30);
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  bottom: -150px;
-  z-index: -2;
+.carousel__slide > .carousel__item {
+  transform: scale(1);
   opacity: 0.5;
-  transition: all 0.3s ease-out;
+  transition: 0.5s;
 }
-
-.image:hover .overlay {
-  color: black;
+.carousel__slide--visible > .carousel__item {
+  opacity: 1;
+  transform: rotateY(0);
 }
-
-.image:hover .overlay::before {
-  bottom: 0px;
+.carousel__slide--next > .carousel__item {
+  transform: scale(0.9) translate(-10px);
+}
+.carousel__slide--prev > .carousel__item {
+  transform: scale(0.9) translate(10px);
+}
+.carousel__slide--active > .carousel__item {
+  transform: scale(1.1);
 }
 </style>
+

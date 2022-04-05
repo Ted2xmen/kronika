@@ -34,7 +34,7 @@
     </div>
     <div class="d-flex justify-content-between py-2 my-2 border-top">
       <p>&copy; 2021 KRONIKA, All rights reserved. </p>
-          <Button buttonTitle="Yukarı" divId="#top" />
+          <Button buttonTitle="Yukarı" class="bg-light text-dark" divId="#top" />
     </div>
   </footer>
 </template>

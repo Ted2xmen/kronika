@@ -12,11 +12,13 @@
 
     <div class="container">
       <Panel />
-      <Yazmalar class="" />
-      <Siteler class="border border-danger rounded my-2 shadow" />
+      <Organizasyon />
+      <Siteler class="  rounded my-2 shadow" />
       <Koleksiyonlar class="px-5 py-3 my-6" />
       <Qua class="py-2 my-5" />
-      <Kronikler class="border border-danger rounded my-4 shadow" />
+            <Yazmalar class="my-3" />
+
+      <Kronikler class="border  rounded my-4 shadow" />
     </div>
 
     <div id="footer" class="">
@@ -43,6 +45,8 @@ import Koleksiyonlar from "@/components/sections/Koleksiyonlar.vue";
 import Kronikler from "@/components/sections/Kronikler.vue";
 import Siteler from "@/components/sections/Siteler.vue";
 import Panel from "@/components/sections/Panel.vue";
+import Organizasyon from '../components/sections/Organizasyon.vue';
+
 
 import Qua from "@/components/Qua.vue";
 
@@ -60,6 +64,7 @@ export default {
     Siteler,
     Panel,
     Qua,
+    Organizasyon,
   },
 };
 </script>
