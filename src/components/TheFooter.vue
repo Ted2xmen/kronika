@@ -1,5 +1,5 @@
 <template>
-  <footer class="container-md py-4 bg-glass text-white">
+  <footer class="px-5 py-4 bg-nav text-white">
     <div class="row">
       <div class="col-2">
         <h5>Menu</h5>

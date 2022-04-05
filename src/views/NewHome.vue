@@ -29,6 +29,9 @@
           </section>
 
 
+      <Yazmalar />
+
+
 <section id="kutuphaneler">
   <div>
     <Title icon="book" class="py-2" sectionTitle="Kütüphaneler" />
@@ -36,12 +39,9 @@
   </div>
 </section>
 
-<section id="koleksiyonlar">
-  <div>
-    <Title icon="book" class="py-2" sectionTitle="Koleksiyonlar" />
-    <Collections />
-  </div>
-</section>
+
+  <Koleksiyonlar />
+
 
 <section id="logos">
   <div>
@@ -64,23 +64,10 @@
       </section>
 
 
-      <section id="kronikler">
-        <div class="p-1 m-1">
-          <Title
-            icon="book"
-            sectionTitle="Osmanlı Kronikleri"
-            :arrayLength="this.$store.getters.justWeb.length"
-          />
-          <TheBooks />
-        </div>
-      </section>
+  <Kronikler />
 
-    <section id="yazmaeserler" class="my-4">
-          <div class="container-md">
-            <Title class="py-2" icon="book" sectionTitle="Türkiye Yazma Eserler Kurumu" />
-            <Slider />
-          </div>
-      </section>
+
+      <Yazmalar />
 
 </section>
 
@@ -106,10 +93,16 @@ import Logos from "@/components/Logos.vue";
 import Libs from "@/components/Libs.vue";
 import TheSuggested from "@/components/TheSuggested.vue";
 import SiteCards from "@/components/SiteCards.vue";
-import TheBooks from "@/components/TheBooks.vue";
+// import TheBooks from "@/components/TheBooks.vue";
 import Qua from "@/components/Qua.vue";
-import Slider from "@/components/Slider.vue";
-import Collections from "@/components/Collections.vue";
+// import Slider from "@/components/Slider.vue";
+// import Collections from "@/components/Collections.vue";
+
+// sections
+import Yazmalar from "@/components/sections/Yazmalar.vue"
+import Koleksiyonlar from "@/components/sections/Koleksiyonlar.vue"
+import Kronikler from "@/components/sections/Kronikler.vue"
+
 
 
 // shared
@@ -125,13 +118,16 @@ export default {
     TheHero,
     TheSuggested,
     SiteCards,
-    TheBooks,
+    // TheBooks,
+    Kronikler,
     Title,
     Qua,
-    Collections,
-    Slider,
+//    Collections,
+    Koleksiyonlar,
+    // Slider,
     Libs,
-    Logos
+    Logos,
+    Yazmalar
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h2 class="gradient text-center">Kronika.org Osmanlı Tarihi Kaynakları</h2>
+    <h2 class="py-3 text-start">Kronika.org Osmanlı Tarihi Kaynakları</h2>
 </div>
 </template>
 

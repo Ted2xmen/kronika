@@ -1,6 +1,6 @@
 <template>
   <div class="row mx-auto d-flex justify-items-center mx-auto gap-2 py-4">
-    <div class="col">
+    <div class="col  p-4">
       <div class="row">
         <div class="col-3 ">
           <div class="list-group list-group-flush  " id="list-tab" role="tablist">
@@ -14,7 +14,7 @@
               >Dijital Kütüphaneler</a
             >
             <a
-              class="list-group-item list-group-item-action"
+              class="list-group-item  list-group-item-action"
               id="list-profile-list"
               data-bs-toggle="list"
               href="#list-profile"
@@ -95,7 +95,7 @@
 }
 
 .list-group-item {
-  border-color: green !important;
+  border-color: transparent !important;
 }
 </style>
 

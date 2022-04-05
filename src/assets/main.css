@@ -33,7 +33,7 @@ h1 {
 /* linear-gradient(to left top, rgb(163, 230, 53), rgb(250, 204, 21), rgb(127, 29, 29)) */
 
 .bg-nav {
-  background-color: var(--t2);
+  background-color: var(--t1);
   color: wheat;
 }
 
