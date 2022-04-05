@@ -5,65 +5,27 @@
         row
         gap-0
         row-cols-1 row-cols-md-2 row-cols-sm-1 row-cols-lg-3 row-cols-xl-3
-      "
-    >
+      ">
       <div
         class="col p-1 my-1"
         v-for="item in this.$store.getters.justWeb"
         :key="item"
       >
-        <!-- <div class="col">
-          <div class="card hover morder radius">
-            <div class="row">
-              <div class="col-md-3">
-                <img
-                  :src="item.imageUrl"
-                  style="width: 55px"
-                  class="m-1 radius card-img-top ml-5"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-9">
-                <a
-                  :href="item.downloadUrl"
-                  class="card-title text-warning pt-4"
-                >
-                  {{ item.title }}</a
-                >
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text text-muted">
-                {{ item.summary.slice(0, 100) }}...
-              </p>
-              <span class="text-muted"
-                ><span class="badge bg-primary">Primary</span>&nbsp;<span
-                  class="badge bg-success"
-                  >Success</span
-                >&nbsp;<span class="badge bg-info text-light">Info minfo</span>
-                &nbsp;</span
-              >
-            </div>
-          </div>
-        </div> -->
         <a :href="item.downloadUrl" class="link text-dark">
-        <div class="col shadow-sm">
-          <div class="hover morder radius">
-            <div class="row">
-              <div class="col-md-2 text-center mt-3">
-                <vue-feather type="link"></vue-feather>
-              </div>
-              <div class="col-md-8">
-                <h6 class="card-title pt-3">{{ item.title }}</h6>
-              </div>
-            </div>
-            <div class="card-body">
-              <p class="card-text text-muted">
-                {{ item.summary.slice(0, 80) }}...
-              </p>
+          <div class="col hover pt-1">
+            <div class="alert alert-light border border-dark" role="alert">
+              <p>{{ item.summary.slice(0, 80) }}...</p>
+              <img
+                src="https://www.zotero.org/support/_media/logo/zotero_512x512x32.png"
+                width="30"
+                class="rounded me-2"
+                alt=""
+              />
+              <span>
+                {{ item.title }}
+              </span>
             </div>
           </div>
-        </div>
         </a>
       </div>
     </div>

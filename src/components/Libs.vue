@@ -74,9 +74,9 @@
               aria-labelledby="list-profile-list"
             >
 
-  <div class="row row-cols-4">
-    <div class="colm-md-3 pt-1" v-for="item in 4" :key="item"  >
-   <img src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/0f/c5/5f/0fc55f70-094a-990a-a5ef-2ac34d8f457a/mza_5502973513603401216.jpg/1000x1000bb.jpg"   class="img-thumbnail"   alt="">
+  <div class="row row-cols-5">
+    <div class="colm-md-3 pt-1 hover" v-for="item in 4" :key="item"  >
+   <img src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/0f/c5/5f/0fc55f70-094a-990a-a5ef-2ac34d8f457a/mza_5502973513603401216.jpg/1000x1000bb.jpg"   class="img-thumbnail shadow-sm"   alt="">
     </div>
   </div>
 
@@ -113,6 +113,7 @@
                   <div class="alert alert-light border shadow-sm" role="alert">
                    <img src="https://www.zotero.org/support/_media/logo/zotero_512x512x32.png" width="25" class="rounded" alt=""> Zotero
                   </div>
+               
                 </div>
               </div>
             

@@ -10,15 +10,15 @@
       <NavRow />
     </div>
 
-    <div class="container">
-      <Panel />
+    <div class="container-md">
+      <Panel class="d-sm-none d-md-block d-none d-sm-block" />
+      <MobilPanel />
       <Organizasyon />
-      <Siteler class="  rounded my-2 shadow" />
-      <Koleksiyonlar class="px-5 py-3 my-6" />
+      <Siteler class="my-2 shadow" />
+      <Koleksiyonlar class="px-2 py-3 my-6" />
       <Qua class="py-2 my-5" />
-            <Yazmalar class="my-3" />
-
-      <Kronikler class="border  rounded my-4 shadow" />
+      <Yazmalar class="my-3" />
+      <Kronikler class="py-5 my-4 shadow" />
     </div>
 
     <div id="footer" class="">
@@ -45,8 +45,8 @@ import Koleksiyonlar from "@/components/sections/Koleksiyonlar.vue";
 import Kronikler from "@/components/sections/Kronikler.vue";
 import Siteler from "@/components/sections/Siteler.vue";
 import Panel from "@/components/sections/Panel.vue";
-import Organizasyon from '../components/sections/Organizasyon.vue';
-
+import Organizasyon from "../components/sections/Organizasyon.vue";
+import MobilPanel from "../components/sections/MobilPanel.vue";
 
 import Qua from "@/components/Qua.vue";
 
@@ -64,6 +64,7 @@ export default {
     Siteler,
     Panel,
     Qua,
+    MobilPanel,
     Organizasyon,
   },
 };
