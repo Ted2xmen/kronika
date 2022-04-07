@@ -6,6 +6,7 @@ export default createStore({
     reklamOne: "",
     reklamTwo: "",
     reklamThree: "",
+    localData: [],
     bookData: [], // from app.vue
     sliderBooks: [
       {
@@ -47,6 +48,9 @@ export default createStore({
 
   getters: {
     // add suggested
+    justLib: (state) => {
+      return state.localData[0]
+    },
     justWeb: (state) => {
       return state.bookData.filter((item) => item.category === "Web");
     },

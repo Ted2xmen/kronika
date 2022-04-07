@@ -1,0 +1,470 @@
+{
+  "guid": "Yhd-SixZIJRn",
+  "title": "kronika",
+  "index": 7,
+  "dateAdded": 1649078376254000,
+  "lastModified": 1649247491061000,
+  "id": 834,
+  "typeCode": 2,
+  "type": "text/x-moz-place-container",
+  "children": [
+    {
+      "guid": "DLexxyqZ-KTg",
+      "title": "istanbul",
+      "index": 0,
+      "dateAdded": 1637954203066000,
+      "lastModified": 1649246058868000,
+      "id": 552,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "children": [
+        {
+          "guid": "54XtCvcLycxm",
+          "title": "İstanbul Surları",
+          "index": 0,
+          "dateAdded": 1636023460234000,
+          "lastModified": 1637954224993000,
+          "id": 116,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://istanbulsurlari.ku.edu.tr/tr/page/team"
+        },
+        {
+          "guid": "J9GFilLP4PMw",
+          "title": "İçindekiler | Büyük İstanbul Tarihi",
+          "index": 1,
+          "dateAdded": 1636023456041000,
+          "lastModified": 1637954233876000,
+          "id": 117,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://istanbultarihi.ist/icindekiler"
+        }
+      ]
+    },
+    {
+      "guid": "t-mihMUCv5kZ",
+      "title": "library",
+      "index": 1,
+      "dateAdded": 1649245802857000,
+      "lastModified": 1649247442493000,
+      "id": 843,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "children": [
+        {
+          "guid": "FcV0Q_vYY9sP",
+          "title": "Archives and Special Collections | University of Minnesota Libraries",
+          "index": 0,
+          "dateAdded": 1649245822649000,
+          "lastModified": 1649245822649000,
+          "id": 844,
+          "typeCode": 1,
+          "iconuri": "https://www.lib.umn.edu/sites/www.lib.umn.edu/themes/umnlib/favicons/android-chrome-512x512.png",
+          "type": "text/x-moz-place",
+          "uri": "https://www.lib.umn.edu/collections/special"
+        },
+        {
+          "guid": "C9dxL_k1HJGh",
+          "title": "Home - Research Guides at University of Michigan Library",
+          "index": 1,
+          "dateAdded": 1555505758000000,
+          "lastModified": 1649245830834000,
+          "id": 213,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://guides.lib.umich.edu/?b=s"
+        },
+        {
+          "guid": "A7rHc2DiLryy",
+          "title": "Internet Archive: Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine",
+          "index": 2,
+          "dateAdded": 1599756732846000,
+          "lastModified": 1649245855550000,
+          "id": 216,
+          "typeCode": 1,
+          "iconuri": "https://archive.org/offshoot_assets/favicon.ico",
+          "type": "text/x-moz-place",
+          "uri": "https://archive.org/"
+        },
+        {
+          "guid": "gGCvs5_YZ-Lt",
+          "title": "Databases & Articles",
+          "index": 3,
+          "dateAdded": 1649245883100000,
+          "lastModified": 1649245883100000,
+          "id": 845,
+          "typeCode": 1,
+          "iconuri": "https://libapps.s3.amazonaws.com/apps/common/favicon/apple-touch-icon.png",
+          "type": "text/x-moz-place",
+          "uri": "https://guides.library.pdx.edu/az.php"
+        },
+        {
+          "guid": "zXGn8BV5J60k",
+          "title": "Ottoman & Turkish Studies Association",
+          "index": 4,
+          "dateAdded": 1649245903083000,
+          "lastModified": 1649245903083000,
+          "id": 846,
+          "typeCode": 1,
+          "iconuri": "https://www.ottomanturkishstudiesassociation.org/wp-content/uploads/2020/01/cropped-OTSAicon-192x192.png",
+          "type": "text/x-moz-place",
+          "uri": "https://www.ottomanturkishstudiesassociation.org/"
+        },
+        {
+          "guid": "m4JShap_s56h",
+          "title": "SALT Araştırma: Ana Sayfa",
+          "index": 5,
+          "dateAdded": 1599760331537000,
+          "lastModified": 1649246149987000,
+          "id": 207,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://archives.saltresearch.org/"
+        },
+        {
+          "guid": "jk-3Vl4qnYrh",
+          "title": "IRCICA Kütüphanesi",
+          "index": 6,
+          "dateAdded": 1649246498329000,
+          "lastModified": 1649246498329000,
+          "id": 849,
+          "typeCode": 1,
+          "iconuri": "https://library.ircica.org/images/apple-touch-icon-144x144.png",
+          "type": "text/x-moz-place",
+          "uri": "https://library.ircica.org/"
+        },
+        {
+          "guid": "aYzyeSLTRAM3",
+          "title": "Turuz - Dil ve Etimoloji Kütüphanesi",
+          "index": 7,
+          "dateAdded": 1649246510101000,
+          "lastModified": 1649246510101000,
+          "id": 850,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://turuz.com/"
+        },
+        {
+          "guid": "iMhBx9nDjY6Y",
+          "title": "Duke University Libraries, Ottoman-Turkish Literature : Free Texts : Free Download, Borrow and Streaming : Internet Archive",
+          "index": 8,
+          "dateAdded": 1649246521346000,
+          "lastModified": 1649246521346000,
+          "id": 851,
+          "typeCode": 1,
+          "iconuri": "https://archive.org/images/glogo.jpg",
+          "type": "text/x-moz-place",
+          "uri": "https://archive.org/details/dulturk"
+        },
+        {
+          "guid": "9swPHppuBHw5",
+          "title": "Gallica",
+          "index": 9,
+          "dateAdded": 1649246594309000,
+          "lastModified": 1649246594309000,
+          "id": 852,
+          "typeCode": 1,
+          "iconuri": "https://gallica.bnf.fr/accueil/sites/default/files/index.ico",
+          "type": "text/x-moz-place",
+          "uri": "https://gallica.bnf.fr/accueil/en/content/accueil-en/?mode=desktop"
+        },
+        {
+          "guid": "Ll8yg3XSkmcN",
+          "title": "Gertrude Bell",
+          "index": 10,
+          "dateAdded": 1649246723563000,
+          "lastModified": 1649246723563000,
+          "id": 859,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://gertrudebell.ncl.ac.uk/photos.php"
+        },
+        {
+          "guid": "7rI9j3qt-IJN",
+          "title": "Library Genesis",
+          "index": 11,
+          "dateAdded": 1576331621000000,
+          "lastModified": 1649247442493000,
+          "id": 210,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://gen.lib.rus.ec/"
+        }
+      ]
+    },
+    {
+      "guid": "nydHKcY7AnuE",
+      "title": "blog",
+      "index": 2,
+      "dateAdded": 1649246279044000,
+      "lastModified": 1649246709464000,
+      "id": 848,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "children": [
+        {
+          "guid": "VjMdWxb0J3BA",
+          "title": "The Digital Orientalist – Practical examples and theoretical reflections on the do's and don'ts of using digital tools for your study and research in African, Oriental Studies..",
+          "index": 0,
+          "dateAdded": 1611744293804000,
+          "lastModified": 1649246317864000,
+          "id": 163,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://digitalorientalist.com/"
+        },
+        {
+          "guid": "MtDOpKY2g1uo",
+          "title": "The Programming Historian | Programming Historian",
+          "index": 1,
+          "dateAdded": 1620385293603000,
+          "lastModified": 1649246328431000,
+          "id": 162,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://programminghistorian.org/"
+        },
+        {
+          "guid": "H7f-vfeA6EpQ",
+          "title": "Donanma Tarihi | Osmanlıdan Günümüze Donanma Tarihi",
+          "index": 2,
+          "dateAdded": 1649246666264000,
+          "lastModified": 1649246666264000,
+          "id": 856,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://donanmatarihi.com/"
+        },
+        {
+          "guid": "d5Vgd_qhpA8K",
+          "title": "Hazine - For Researchers of the Diverse Islamic Worlds",
+          "index": 3,
+          "dateAdded": 1649246691162000,
+          "lastModified": 1649246691162000,
+          "id": 857,
+          "typeCode": 1,
+          "iconuri": "https://hazine.info/wp-content/uploads/2021/04/cropped-Tab-icon-final-7-192x192.png",
+          "type": "text/x-moz-place",
+          "uri": "https://hazine.info/"
+        },
+        {
+          "guid": "-_W1ARcuXbnV",
+          "title": "Access to Mideast and Islamic Resources (AMIR)",
+          "index": 4,
+          "dateAdded": 1649246709464000,
+          "lastModified": 1649246709464000,
+          "id": 858,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://amirmideast.blogspot.com/"
+        }
+      ]
+    },
+    {
+      "guid": "79nUvPZoh3yU",
+      "title": "birincil",
+      "index": 3,
+      "dateAdded": 1649245673369000,
+      "lastModified": 1649246644330000,
+      "id": 838,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "children": [
+        {
+          "guid": "Tu3qDzRz88Zx",
+          "title": "Home » DergiPark",
+          "index": 0,
+          "dateAdded": 1649245689214000,
+          "lastModified": 1649245689214000,
+          "id": 839,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://dergipark.org.tr/en/"
+        },
+        {
+          "guid": "WUgwEGLCKESg",
+          "title": "Ulusal Tez Merkezi | Anasayfa",
+          "index": 1,
+          "dateAdded": 1649245705365000,
+          "lastModified": 1649245705365000,
+          "id": 840,
+          "typeCode": 1,
+          "iconuri": "https://tez.yok.gov.tr/UlusalTezMerkezi/css/images/favicon.ico",
+          "type": "text/x-moz-place",
+          "uri": "https://tez.yok.gov.tr/UlusalTezMerkezi/"
+        },
+        {
+          "guid": "Eknt4XgjdcQo",
+          "title": "https://katalog.devletarsivleri.gov.tr/",
+          "index": 2,
+          "dateAdded": 1649245775516000,
+          "lastModified": 1649245775516000,
+          "id": 841,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://katalog.devletarsivleri.gov.tr/"
+        },
+        {
+          "guid": "9Ikr7E_sCPAi",
+          "title": ".:: İstanbul Kadı Sicilleri ::.",
+          "index": 3,
+          "dateAdded": 1649245786315000,
+          "lastModified": 1649245786315000,
+          "id": 842,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://www.kadisicilleri.org/index.php"
+        },
+        {
+          "guid": "yHJC7oeLB22u",
+          "title": "OTTOMANINSCRIPTIONS | Database for Ottoman Inscriptions | Osmanlı Kitabeleri Projesi",
+          "index": 4,
+          "dateAdded": 1649245936465000,
+          "lastModified": 1649245936465000,
+          "id": 847,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://info.ottomaninscriptions.com/"
+        },
+        {
+          "guid": "YcwRoyWitUB6",
+          "title": "İSLAM DÜŞÜNCE ATLASI",
+          "index": 5,
+          "dateAdded": 1614981772750000,
+          "lastModified": 1649246022686000,
+          "id": 219,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://www.islamdusunceatlasi.org/hakkimizda"
+        },
+        {
+          "guid": "tXmJ0zPDLNcL",
+          "title": "TDV İslâm Araştırmaları Merkezi (İSAM) Kütüphanesi",
+          "index": 6,
+          "dateAdded": 1599753503100000,
+          "lastModified": 1649246175937000,
+          "id": 168,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://ktp2.isam.org.tr/"
+        },
+        {
+          "guid": "btzvCVRcjqJs",
+          "title": "JSTOR Home",
+          "index": 7,
+          "dateAdded": 1599756703339000,
+          "lastModified": 1649246186655000,
+          "id": 165,
+          "typeCode": 1,
+          "iconuri": "https://www.jstor.org/assets/global_20220110T1645/build/images/favicons/android-chrome-512x512.png",
+          "type": "text/x-moz-place",
+          "uri": "https://www.jstor.org/"
+        },
+        {
+          "guid": "2D-sxK0c4xnt",
+          "title": "Ana Sayfa",
+          "index": 8,
+          "dateAdded": 1649246608614000,
+          "lastModified": 1649246608614000,
+          "id": 853,
+          "typeCode": 1,
+          "iconuri": "https://dspace.ankara.edu.tr/xmlui/themes/Mirage2/images/apple-touch-icon.png",
+          "type": "text/x-moz-place",
+          "uri": "https://dspace.ankara.edu.tr/xmlui/"
+        },
+        {
+          "guid": "q6TNTfajxzL7",
+          "title": "Atatürk Araştırma Merkezi",
+          "index": 9,
+          "dateAdded": 1649246630664000,
+          "lastModified": 1649246630664000,
+          "id": 854,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://www.atam.gov.tr/"
+        },
+        {
+          "guid": "gfcam6gYArUF",
+          "title": "Milli Kütüphane | National Library of Turkey",
+          "index": 10,
+          "dateAdded": 1649246644330000,
+          "lastModified": 1649246644330000,
+          "id": 855,
+          "typeCode": 1,
+          "iconuri": "http://www.millikutuphane.gov.tr/Common/favicon.new.ico?v=20200701-1735",
+          "type": "text/x-moz-place",
+          "uri": "http://www.millikutuphane.gov.tr/"
+        }
+      ]
+    },
+    {
+      "guid": "DXvaX7EF23rq",
+      "title": "sozlukler",
+      "index": 4,
+      "dateAdded": 1649245326625000,
+      "lastModified": 1649246236505000,
+      "id": 835,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "children": [
+        {
+          "guid": "6rnD0Cg8J-qV",
+          "title": "Osmanlica Sozlukler",
+          "index": 0,
+          "dateAdded": 1649245368000000,
+          "lastModified": 1649245368000000,
+          "id": 836,
+          "typeCode": 1,
+          "iconuri": "https://www.osmanlicasozlukler.com/kapak/img/apple_icons_114x114.png",
+          "type": "text/x-moz-place",
+          "uri": "https://www.osmanlicasozlukler.com/"
+        },
+        {
+          "guid": "KU9cvUUkqAui",
+          "title": "Osmanlıca Sözlük",
+          "index": 1,
+          "dateAdded": 1649245428733000,
+          "lastModified": 1649245428733000,
+          "id": 837,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://pauctle.com/osmtr/"
+        },
+        {
+          "guid": "Rg31uiMNusxS",
+          "title": "Kubbealti Lugati",
+          "index": 2,
+          "dateAdded": 1599759572920000,
+          "lastModified": 1649246203255000,
+          "id": 224,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://www.lugatim.com/"
+        },
+        {
+          "guid": "7tKHccvURwnQ",
+          "title": "LexiQamus",
+          "index": 3,
+          "dateAdded": 1595420139000000,
+          "lastModified": 1649246212721000,
+          "id": 227,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://www.lexiqamus.com/tr"
+        },
+        {
+          "guid": "rqupBAeuvcM5",
+          "title": "Tebdiz | \"Tarih ve Edebiyat Metinleri Bağlamlı Dizin ve İşlevsel Sözlüğü\"",
+          "index": 4,
+          "dateAdded": 1599763524182000,
+          "lastModified": 1649246236505000,
+          "id": 228,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "http://www.tebdiz.com/"
+        }
+      ]
+    }
+  ]
+}

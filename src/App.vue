@@ -12,6 +12,29 @@ export default {
   },
 
   methods: {
+
+
+
+  getLocalData() {
+      axios
+        .get(
+          "db.json"
+        )
+        .then((response) => {
+          var data = response.data;
+          console.log(data.children[1].children)
+          this.$store.state.localData.push(data.children[1].children)
+
+          // for (let key in data) {
+          //   var n = data[key];
+          //   this.$store.state.localData.push(n);
+          // }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+
     getBookData() {
       axios
         .get(
@@ -33,6 +56,8 @@ export default {
 
   mounted() {
     this.getBookData();
+        this.getLocalData();
+
   },
 };
 </script>

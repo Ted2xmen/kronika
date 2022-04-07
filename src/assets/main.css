@@ -23,6 +23,10 @@ h1 {
   font-weight: 600;
 }
 
+.customImage {
+  object-fit: contain;
+}
+ 
 .gradient {
   font-size: 72px;
   background: -webkit-linear-gradient(rgb(38, 38, 38), rgb(6, 78, 59),rgb(120, 113, 108));

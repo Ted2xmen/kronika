@@ -8,15 +8,15 @@
       ">
       <div
         class="col p-1 my-1"
-        v-for="item in this.$store.getters.justWeb"
+        v-for="item in this.$store.getters.justLib"
         :key="item"
       >
         <a :href="item.downloadUrl" class="link text-dark">
           <div class="col hover pt-1">
             <div class="alert alert-light border border-dark" role="alert">
-              <p>{{ item.summary.slice(0, 80) }}...</p>
+              <!-- <p>{{ item.summary.slice(0, 80) }}...</p> -->
               <img
-                src="https://www.zotero.org/support/_media/logo/zotero_512x512x32.png"
+                :src="item.iconuri"
                 width="30"
                 class="rounded me-2"
                 alt=""

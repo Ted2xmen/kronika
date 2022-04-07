@@ -11,7 +11,19 @@
         accusantium voluptatibus aperiam dolorem nihil aliquid distinctio
         adipisci eos cum facere nam rerum rem! Eum omnis minima repudiandae nam
         atque deleniti.
-      </p>
+             </p>
+          <div>
+            <ul>
+              <li v-for="(item, i) in this.$store.getters.justLib" :key="i">
+                <p> {{item.title}} </p>
+                <a :href="item.uri">URL</a>
+                <img :src="item.iconuri" width="30" alt="">
+
+              </li>
+            </ul>
+          </div>
+
+ 
     </div>
     <TheFooter v-if="false" />
   </div>

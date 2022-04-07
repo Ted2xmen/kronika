@@ -60,9 +60,9 @@
               aria-labelledby="list-home-list"
             >
               <div class="row row-cols-3" >
-                <div class="col pt-1" v-for="item in 6" :key="item">
+                <div class="col pt-1" v-for="(item, i) in this.$store.getters.justLib" :key="i">
                   <div class="alert alert-light border shadow-sm" role="alert">
-                   <img src="https://arastirmanv4.vercel.app/assets/images/logos/canadian.png" width="25" class="rounded" alt=""> World Digital Library
+                   <img :src="item.iconuri" width="25" class="rounded" alt=""> {{item.title}}
                   </div>
                 </div>
               </div>
