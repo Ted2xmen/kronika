@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <div
       class="
         row
@@ -8,21 +8,28 @@
       "
     >
       <div
-        class="col p-1 my-1"
+        class="mx-auto p-1 my-1"
         v-for="item in this.$store.getters.library"
         :key="item"
       >
-        <a :href="item.downloadUrl" class="link text-dark">
-          <div class="col hover pt-1">
-            <div class="alert alert-light border border-dark" role="alert">
-              <!-- <p>{{ item.summary.slice(0, 80) }}...</p> -->
-              <img :src="item.iconuri" width="30" class="rounded me-2" alt="" />
-              <span>
-                {{ item.title }}
-              </span>
-            </div>
-          </div>
-        </a>
+        <li
+          class="
+            hover
+            rounded
+            list-group-item
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          {{ item.title }}
+          <img :src="item.iconuri" width="30" class="rounded" alt="" />
+        </li>
+
+        <!-- <img :src="item.iconuri" width="30" class="rounded me-2" alt="" />
+        <span>
+          {{ item.title }}
+        </span> -->
       </div>
     </div>
   </div>

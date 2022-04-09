@@ -21,11 +21,9 @@ export default {
     return {
       nawRow: [
         { title: "#kronikler", href: "#kronikler" },
-        { title: "#internetsiteleri", href: "#footer" },
+        { title: "#siteler", href: "#usefulsites" },
         { title: "#koleksiyonlar", href: "#koleksiyonlar" },
-        { title: "#yazmaeserler", href: "#yazmaeserler" },
-        { title: "#kitaplar", href: "#s3uggest" },
-        { title: "#müzeler", href: "#foo6ter" },
+        { title: "#yazmaeserler", href: "#yazmaeserler" }
       ],
     };
   },

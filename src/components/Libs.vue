@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-2">
           <div class="list-group list-group-flush" id="list-tab" role="tablist">
-              <a
+            <a
               class="list-group-item list-group-item-action"
               id="apps-lists"
               data-bs-toggle="list"
@@ -54,7 +54,7 @@
         <div class="col-10">
           <div class="tab-content" id="nav-tabContent">
             <div
-              class="tab-pane fade "
+              class="tab-pane fade"
               id="list-home"
               role="tabpanel"
               aria-labelledby="list-home-list"
@@ -65,15 +65,7 @@
                   v-for="item in this.$store.getters.blogs"
                   :key="item"
                 >
-                  <div class="alert alert-light border shadow-sm" role="alert">
-                    <img
-                      :src="item.iconuri"
-                      width="25"
-                      class="rounded"
-                      alt=""
-                    />
-                    {{ item.title.slice(0, 28) }}
-                  </div>
+                  <PanelCard :title="item.title" :icon="item.iconuri" />
                 </div>
               </div>
             </div>
@@ -105,15 +97,7 @@
                   v-for="item in this.$store.getters.dictionary"
                   :key="item"
                 >
-                  <div class="alert alert-light border shadow-sm" role="alert">
-                    <img
-                      :src="item.iconuri"
-                      width="25"
-                      class="rounded"
-                      alt=""
-                    />
-                    {{ item.title }}
-                  </div>
+                  <PanelCard :title="item.title" :icon="item.iconuri" />
                 </div>
               </div>
             </div>
@@ -125,16 +109,12 @@
               aria-labelledby="lists-apps"
             >
               <div class="row row-cols-3">
-                <div class="col pt-1" v-for="item in this.$store.getters.literatur" :key="item">
-                  <div class="alert alert-light border shadow-sm" role="alert">
-                    <img
-                      :src="item.iconuri"
-                      width="25"
-                      class="rounded"
-                      alt=""
-                    />
-                    {{item.title}}
-                  </div>
+                <div
+                  class="col pt-1"
+                  v-for="item in this.$store.getters.literatur"
+                  :key="item"
+                >
+                  <PanelCard :title="item.title" :icon="item.iconuri" />
                 </div>
               </div>
             </div>
@@ -151,6 +131,17 @@
     </div>
   </div>
 </template>
+
+
+<script>
+import PanelCard from "@/components/shared/PanelCard.vue";
+export default {
+  name: "Libs",
+  components: {
+    PanelCard,
+  },
+};
+</script>
 
 
 <style scoped>

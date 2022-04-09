@@ -13,7 +13,7 @@
       <MobilPanel />
       <Panel class="d-sm-none d-md-block d-none d-sm-block" />
       <Organizasyon />
-      <Siteler class="my-2 shadow" />
+      <Siteler class="my-2" />
       <Koleksiyonlar class="px-2 py-3 my-6" />
       <Yazmalar class="my-3" />
       <Qua class="py-2 my-5" />
