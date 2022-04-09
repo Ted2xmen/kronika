@@ -5,37 +5,25 @@
 <script>
 import axios from "axios";
 export default {
-  data() {
-    return {
-      myData: {},
-    };
-  },
-
   methods: {
-
-
-
-  getLocalData() {
+    getLocalData() { // firefox
       axios
-        .get(
-          "db.json"
-        )
+        .get("firefox.json")
         .then((response) => {
           var data = response.data;
-          console.log(data.children[1].children)
-          this.$store.state.localData.push(data.children[1].children)
-
-          // for (let key in data) {
-          //   var n = data[key];
-          //   this.$store.state.localData.push(n);
-          // }
+        
+          for (let key in data.children) {
+            var n = data.children[key].children;
+            this.$store.state.localData.push(n);
+            console.log(n[0]);
+          }
         })
         .catch((error) => {
           console.log(error);
         });
     },
 
-    getBookData() {
+    getBookData() { // firebase
       axios
         .get(
           "https://json-5ff41-default-rtdb.europe-west1.firebasedatabase.app/users.json"
@@ -56,8 +44,7 @@ export default {
 
   mounted() {
     this.getBookData();
-        this.getLocalData();
-
+    this.getLocalData();
   },
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="row">
+    <p>logos</p>
     <div class="col">
       <a href="http://ekitap.yek.gov.tr/default.aspx">
         <img
@@ -12,7 +13,7 @@
       <!-- <img src="http://yazmalar.gov.tr/public/theme/img/logo.png" alt=""> -->
     </div>
     <div class="col-md-9 d-sm-none d-md-block d-none d-sm-block">
-      <Carousel :itemsToShow="5" :autoplay="3000" :wrapAround="true">
+      <Carousel :itemsToShow="4" :autoplay="3000" :wrapAround="true">
         <Slide v-for="slide in siteData" :key="slide.name">
           <div class="carousel__item">
             <a href="">
@@ -20,7 +21,7 @@
                 :src="slide.image"
                 width="180"
                 height="120"
-                class="customImage border border-dark p-2 m-2"
+                class="customImage  p-2 m-2"
                 alt=""
               />
             </a>
@@ -56,9 +57,9 @@ export default defineComponent({
           url: "sadasd",
         },
           {
-          name: "Ottoman History Podcast",
+          name: "Turuz",
           image:
-            "https://3.bp.blogspot.com/-RIHihVrogIA/Wnp1U_j6U_I/AAAAAAAAKQM/vp9wYPcNFfcMArjBe1sqG0-p5yQjOHt4ACLcBGAs/s1600/mustach%2Bmic%2B2%2Bx%2B1.jpg",
+            "https://1.bp.blogspot.com/-gSrO4twL8uo/XNWgvDgVEOI/AAAAAAAAIaA/u81yNmmXeroDLKx4OvhlEYXpwH75aOhygCK4BGAYYCw/s1600/turuz.png",
           url: "sadasd",
         },
           {
@@ -68,14 +69,9 @@ export default defineComponent({
           url: "sadasd",
         },
         {
-          name: "Sites",
-          image: "https://library.ircica.org/images/logo.png",
-          url: "sadasd",
-        },
-        {
-          name: "Sitew",
+          name: "Tübitak ULAKBİM",
           image:
-            "https://pro.europeana.eu/files/Europeana_Professional/Aggregation%20Landscape/Logo_pro_BnF%20Gallica.png",
+            "https://4.bp.blogspot.com/-igiw5wY5T44/XNXGh9I5JkI/AAAAAAAAIbY/wZAYxq-lX3oJgoexZfizHq2mZP5-eez7wCK4BGAYYCw/s1600/ulakbim_1.png",
           url: "sadasd",
         },
       ],

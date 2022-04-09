@@ -1,7 +1,7 @@
 <template>
         <section id="yazmaeserler" class="">
-          <div class="">
-            <Title class=""  sectionTitle="" />
+          <div class="py-4">
+            <Title class=""  sectionTitle="Yazma Eserler" />
             <Slider />
           </div>
       </section>

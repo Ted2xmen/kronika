@@ -9,19 +9,17 @@
       <TheInfo />
       <NavRow />
     </div>
-
     <div class="container-md">
-      <Panel class="d-sm-none d-md-block d-none d-sm-block" />
       <MobilPanel />
+      <Panel class="d-sm-none d-md-block d-none d-sm-block" />
       <Organizasyon />
       <Siteler class="my-2 shadow" />
       <Koleksiyonlar class="px-2 py-3 my-6" />
-      <Qua class="py-2 my-5" />
       <Yazmalar class="my-3" />
+      <Qua class="py-2 my-5" />
       <Kronikler class="py-5 my-4 shadow" />
     </div>
-
-    <div id="footer" class="">
+    <div id="footer">
       <TheFooter />
     </div>
   </div>

@@ -4,7 +4,8 @@
           <Title
             icon="book"
             sectionTitle="Osmanlı Kronikleri"
-            :arrayLength="this.$store.getters.justWeb.length"
+                        :arrayLength="4"
+
           />
           <TheBooks />
         </div>

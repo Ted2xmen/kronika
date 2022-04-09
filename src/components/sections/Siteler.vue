@@ -4,7 +4,7 @@
           <Title
             icon="search"
             sectionTitle="Literatür Taraması"
-            :arrayLength="this.$store.getters.justWeb.length"
+            :arrayLength="9"
           />
           <SiteCards />
         </div>

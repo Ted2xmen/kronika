@@ -1,35 +1,35 @@
 <template>
-  <div class="row mx-auto d-flex justify-items-center mx-auto gap-2 py-4">
-    <div class="col  p-4">
+  <div class="row mx-auto d-flex justify-items-center mx-auto gap-1 py-4">
+    <div class="col p-2">
       <div class="row">
-        <div class="col-3 ">
-          <div class="list-group list-group-flush  " id="list-tab" role="tablist">
+        <div class="col-2">
+          <div class="list-group list-group-flush" id="list-tab" role="tablist">
+              <a
+              class="list-group-item list-group-item-action"
+              id="apps-lists"
+              data-bs-toggle="list"
+              href="#list-apps"
+              role="tab"
+              aria-controls="lists-apps"
+              >Literatür</a
+            >
             <a
-              class="list-group-item list-group-item-action " 
+              class="list-group-item list-group-item-action"
               id="list-home-list"
               data-bs-toggle="list"
               href="#list-home"
               role="tab"
               aria-controls="list-home"
-              >Yeni Eklenenler</a
+              >Blog Siteleri</a
             >
             <a
-              class="list-group-item  list-group-item-action"
+              class="list-group-item list-group-item-action"
               id="list-profile-list"
               data-bs-toggle="list"
               href="#list-profile"
               role="tab"
               aria-controls="list-profile"
               >Podcast</a
-            >
-              <a
-              class="list-group-item  list-group-item-action"
-              id="apps-lists"
-              data-bs-toggle="list"
-              href="#list-apps"
-              role="tab"
-              aria-controls="lists-apps"
-              >Uygulamalar</a
             >
             <a
               class="list-group-item list-group-item-action"
@@ -51,18 +51,28 @@
             > -->
           </div>
         </div>
-        <div class="col-9">
+        <div class="col-10">
           <div class="tab-content" id="nav-tabContent">
             <div
-              class="tab-pane fade show active "
+              class="tab-pane fade "
               id="list-home"
               role="tabpanel"
               aria-labelledby="list-home-list"
             >
-              <div class="row row-cols-3" >
-                <div class="col pt-1" v-for="(item, i) in this.$store.getters.justLib" :key="i">
+              <div class="row row-cols-3">
+                <div
+                  class="col hover pt-1"
+                  v-for="item in this.$store.getters.blogs"
+                  :key="item"
+                >
                   <div class="alert alert-light border shadow-sm" role="alert">
-                   <img :src="item.iconuri" width="25" class="rounded" alt=""> {{item.title}}
+                    <img
+                      :src="item.iconuri"
+                      width="25"
+                      class="rounded"
+                      alt=""
+                    />
+                    {{ item.title.slice(0, 28) }}
                   </div>
                 </div>
               </div>
@@ -73,13 +83,15 @@
               role="tabpanel"
               aria-labelledby="list-profile-list"
             >
-
-  <div class="row row-cols-5">
-    <div class="colm-md-3 pt-1 hover" v-for="item in 4" :key="item"  >
-   <img src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/0f/c5/5f/0fc55f70-094a-990a-a5ef-2ac34d8f457a/mza_5502973513603401216.jpg/1000x1000bb.jpg"   class="img-thumbnail shadow-sm"   alt="">
-    </div>
-  </div>
-
+              <div class="row row-cols-5">
+                <div class="colm-md-3 pt-1 hover" v-for="item in 4" :key="item">
+                  <img
+                    src="https://is3-ssl.mzstatic.com/image/thumb/Podcasts125/v4/0f/c5/5f/0fc55f70-094a-990a-a5ef-2ac34d8f457a/mza_5502973513603401216.jpg/1000x1000bb.jpg"
+                    class="img-thumbnail shadow-sm"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
             <div
               class="tab-pane fade"
@@ -87,37 +99,44 @@
               role="tabpanel"
               aria-labelledby="list-messages-list"
             >
-            
-            
-            
-               <div class="row row-cols-3" >
-                <div class="col pt-1" v-for="item in 6" :key="item">
+              <div class="row row-cols-3">
+                <div
+                  class="col pt-1"
+                  v-for="item in this.$store.getters.dictionary"
+                  :key="item"
+                >
                   <div class="alert alert-light border shadow-sm" role="alert">
-                   <img src="https://arastirmanv4.vercel.app/assets/images/logos/luggat.png" width="25" class="rounded" alt=""> Luggat
+                    <img
+                      :src="item.iconuri"
+                      width="25"
+                      class="rounded"
+                      alt=""
+                    />
+                    {{ item.title }}
                   </div>
                 </div>
               </div>
-            
             </div>
 
-   <div
-              class="tab-pane fade"
+            <div
+              class="tab-pane fade show active"
               id="list-apps"
               role="tabpanel"
               aria-labelledby="lists-apps"
             >
-            
-            
-        <div class="row row-cols-3" >
-                <div class="col pt-1" v-for="item in 6" :key="item">
+              <div class="row row-cols-3">
+                <div class="col pt-1" v-for="item in this.$store.getters.literatur" :key="item">
                   <div class="alert alert-light border shadow-sm" role="alert">
-                   <img src="https://www.zotero.org/support/_media/logo/zotero_512x512x32.png" width="25" class="rounded" alt=""> Zotero
+                    <img
+                      :src="item.iconuri"
+                      width="25"
+                      class="rounded"
+                      alt=""
+                    />
+                    {{item.title}}
                   </div>
-               
                 </div>
               </div>
-            
-            
             </div>
 
             <!-- <div

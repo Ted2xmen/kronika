@@ -1,5 +1,4 @@
 import { createStore } from "vuex";
-
 export default createStore({
   state: {
     searchInput: "",
@@ -47,15 +46,23 @@ export default createStore({
   },
 
   getters: {
-    // add suggested
-    justLib: (state) => {
-      return state.localData[0]
-    },
-    justWeb: (state) => {
-      return state.bookData.filter((item) => item.category === "Web");
-    },
+    // from firebase
     justKronik: (state) => {
       return state.bookData.filter((item) => item.category === "Kronik");
+    },
+
+    // from firefox bookmarks
+    dictionary: (state) => {
+      return state.localData[4];
+    },
+    blogs: (state) => {
+      return state.localData[2];
+    },
+    library: (state) => {
+      return state.localData[1];
+    },
+    literatur: (state) => {
+      return state.localData[3];
     },
   },
 
