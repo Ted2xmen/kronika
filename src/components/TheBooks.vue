@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid  px-5 py-4 my-3 mx-auto">
-
+    <div class="container-fluid px-5 py-4 my-3 mx-auto">
       <div class="col-6 mx-auto">
         <div class="input-group mb-1 mt-2 pt-3">
           <Search />
@@ -81,59 +80,28 @@
                 ></button>
               </div>
 
-              <div class="alert alert-success" role="alert">
-                {{ modals.reklamTwo }}
-              </div>
-
-              <div class="modal-body">
-                <div class="card profile-card-5">
-                  <div class="card-img-block">
-                    <img
-                      class="card-img-top box-1"
-                      :src="modals.imageUrl"
-                      alt="Card image cap"
-                      style="
-                        width: 280px !important;
-                        height: 380px !important;
-                        object-fit: cover;
-                        object-position: 1px 1px;
-                      "
-                    />
-                  </div>
-
+              <div class="modal-body bg-glass">
+                <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">{{ modals.title }}</h5>
-                    <h6 class="card-title">
-                      {{ modals.author }}
-                      <span>
-                        <a
-                          :href="modals.downloadUrl"
-                          class="btn btn-danger btn-sm"
-                        >
-                          İndir</a
-                        >
-
-                        <!-- <a :href="modals.downloadUrl"
-                          class="btn btn-warning ms-2 btn-sm"
-                          >PDF</a> -->
-                      </span>
-                    </h6>
-
+                    <h3 class="card-title">{{ modals.author }}</h3>
+                    <h5 class="card-title ml-5">
+                      {{ modals.title }}
+                    </h5>
                     <span>{{ modals.year }}</span>
+
+                    <div>
+                      <a
+                        :href="modals.downloadUrl"
+                        target="_blank"
+                        class="btn btn-danger btn-sm"
+                      >
+                        Dosyaya Git</a
+                      >
+                    </div>
 
                     <p class="card-text">
                       {{ modals.summary }}
                     </p>
-                    <div class="alert alert-primary" role="alert">
-                      {{ this.$store.state.reklamOne }}
-                    </div>
-                    <p class="card-text">
-                      {{ modals.description }}
-                    </p>
-
-                    <div class="alert alert-danger" role="alert">
-                      {{ this.$store.state.reklamThree }}
-                    </div>
                   </div>
                 </div>
               </div>
@@ -163,7 +131,6 @@ export default {
   methods: {
     showModal(item) {
       this.modals = item;
-      // console.log(item);
     },
   },
 
@@ -180,21 +147,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.profile-card-5 {
-  margin-top: 20px;
-  padding-left: 20px;
-}
-.profile-card-5 .btn {
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 7px 20px;
-}
-.profile-card-5 .card-img-block {
-  width: 81%;
-  margin: 0 auto;
-  position: relative;
-  top: -30px;
-}
-</style>
+

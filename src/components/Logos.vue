@@ -20,7 +20,7 @@
                 :src="slide.image"
                 width="140"
                 height="100"
-                class="customImage shadow rounded p-2 m-2"
+                class="customImage rounded p-2 m-2"
                 alt=""
               />
             </a>
