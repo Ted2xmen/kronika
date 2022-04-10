@@ -1,10 +1,18 @@
 import { createStore } from "vuex";
 export default createStore({
   state: {
+    navLinks: [
+      { title: "Anasayfa", href: "/" },
+      { title: "Hakkında", href: "/about" },
+      // { title: "Blog", href: "/blog" },
+    ],
+    secondNav: [
+      { title: "#kronikler", href: "#kronikler" },
+      { title: "#literatür", href: "#usefulsites" },
+      { title: "#koleksiyonlar", href: "#koleksiyonlar" },
+      { title: "#yazmaeserler", href: "#yazmaeserler" },
+    ],
     searchInput: "",
-    reklamOne: "",
-    reklamTwo: "",
-    reklamThree: "",
     localData: [],
     bookData: [], // from app.vue
     sliderBooks: [
@@ -28,12 +36,6 @@ export default createStore({
         img:
           "http://ekitap.yek.gov.tr/uploads/productsimages/358f58d4-f7aa-4213-b1c1-47111ed55a33.jpeg",
       },
-    ],
-    secondNav: [
-      { title: "#kronikler", href: "#kronikler" },
-      { title: "#literatür", href: "#usefulsites" },
-      { title: "#koleksiyonlar", href: "#koleksiyonlar" },
-      { title: "#yazmaeserler", href: "#yazmaeserler" },
     ],
   },
 

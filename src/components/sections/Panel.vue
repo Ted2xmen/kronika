@@ -1,7 +1,6 @@
 <template>
   <section id="kutuphaneler">
     <div>
-      <!-- <Title icon="star" class="py-1" sectionTitle="" /> -->
       <Libs />
     </div>
   </section>

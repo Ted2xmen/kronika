@@ -9,8 +9,6 @@
             </a>
           </div>
         </Slide>
-
-        ...
       </Carousel>
     </div>
     <div class="col ">
@@ -18,11 +16,8 @@
         <img
           src="http://ekitap.yek.gov.tr/uploads/banner_002.jpg"
           class="img-fluid"
-   
-          alt=""
         />
       </a>
-      <!-- <img src="http://yazmalar.gov.tr/public/theme/img/logo.png" alt=""> -->
     </div>
   </div>
 </template>

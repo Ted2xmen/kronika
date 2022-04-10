@@ -4,7 +4,6 @@
       <Title
         icon="search"
         sectionTitle="Literatür Taraması"
-        :arrayLength="100"
       />
       <SiteCards />
     </div>

@@ -9,7 +9,6 @@
       <SecondNav />
     </div>
     <section class="container-lg">
-      <MobilPanel />
       <Panel class="d-sm-none d-md-block d-none d-sm-block" />
       <Organizasyon />
       <Koleksiyonlar class="px-2 py-3 my-6" />
@@ -43,7 +42,6 @@ import Kronikler from "@/components/sections/Kronikler.vue";
 import Siteler from "@/components/sections/Siteler.vue";
 import Panel from "@/components/sections/Panel.vue";
 import Organizasyon from "../components/sections/Organizasyon.vue";
-import MobilPanel from "../components/sections/MobilPanel.vue";
 
 import Qua from "@/components/Qua.vue";
 
@@ -61,7 +59,6 @@ export default {
     Siteler,
     Panel,
     Qua,
-    MobilPanel,
     Organizasyon,
   },
 };

@@ -7,25 +7,12 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İletişim</a></li>
-          
         </ul>
       </div>
 
-      <div class="col-2">
-        <ul class="nav flex-column">
-
-     
-        </ul>
-      </div>
-
-      <div class="col-2">
-   
-        <ul class="nav flex-column">
-        
-        </ul>
-      </div>
 
       <div class="col-4 offset-1">
+        
       </div>
     </div>
     <div class="d-flex justify-content-between py-2 my-2 border-top">

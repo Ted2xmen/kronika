@@ -7,6 +7,4 @@
     aria-label="Yazara veya başlığa göre ara..."
     aria-describedby="button-addon2"
   />
-
-  <!-- <vue-feather type="search"></vue-feather> -->
 </template>

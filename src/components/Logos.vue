@@ -9,7 +9,6 @@
           alt=""
         />
       </a>
-      <!-- <img src="http://yazmalar.gov.tr/public/theme/img/logo.png" alt=""> -->
     </div>
     <div class="col-md-9 d-sm-none d-md-block d-none d-sm-block">
       <Carousel :itemsToShow="4" :autoplay="3000" :wrapAround="true">

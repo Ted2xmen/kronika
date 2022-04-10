@@ -7,14 +7,10 @@
       <span class="navbar-toggler-icon   ">=</span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav" v-for="nav in this.$store.state.navLinks" :key="nav.href">
         <li class="nav-item">
-             <router-link class="nav-link" to="/">Anasayfa</router-link>
+             <router-link class="nav-link" :to="nav.href">{{nav.title}}</router-link>
         </li>
-        <li class="nav-item">
-         <router-link class="nav-link" to="/about">Hakkında</router-link>
-        </li>
-      
       </ul>
     </div>
   </div>
