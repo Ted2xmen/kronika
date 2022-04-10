@@ -1,14 +1,14 @@
 <template>
-  <div class="main">
+  <main class="main">
     <section id="head">
       <TheNavbar id="top" />
       <TheHero />
     </section>
     <div class="container">
       <TheInfo />
-      <NavRow />
+      <SecondNav />
     </div>
-    <div class="container-md">
+    <section class="container-lg">
       <MobilPanel />
       <Panel class="d-sm-none d-md-block d-none d-sm-block" />
       <Organizasyon />
@@ -16,12 +16,12 @@
       <Siteler class="my-2" />
       <Qua class="py-2 my-5" />
       <Yazmalar class="my-3" />
-      <Kronikler class="py-5 my-4 shadow" />
-    </div>
-    <div id="footer">
+      <Kronikler class="py-5 my-4" />
+    </section>
+    <section id="footer">
       <TheFooter />
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 
@@ -33,7 +33,7 @@
 import TheNavbar from "@/components/TheNavbar.vue";
 import TheHero from "@/components/TheHero.vue";
 import TheFooter from "@/components/TheFooter.vue";
-import NavRow from "@/components/NavRow.vue";
+import SecondNav from "@/components/SecondNav.vue";
 import TheInfo from "@/components/TheInfo.vue";
 
 // sections
@@ -55,7 +55,7 @@ export default {
     Kronikler,
     TheNavbar,
     TheHero,
-    NavRow,
+    SecondNav,
     TheInfo,
     TheFooter,
     Siteler,

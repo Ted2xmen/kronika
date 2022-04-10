@@ -1,7 +1,11 @@
 <template>
   <section id="kronikler">
     <div class="p-1 m-1">
-      <Title icon="book" sectionTitle="Osmanlı Kronikleri" :arrayLength="4" />
+      <Title
+        icon="book"
+        sectionTitle="Osmanlı Kronikleri"
+        :arrayLength="this.$store.getters.justKronik.length"
+      />
       <TheBooks />
     </div>
   </section>

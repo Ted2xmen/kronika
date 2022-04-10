@@ -5,7 +5,7 @@ export default createStore({
     reklamOne: "",
     reklamTwo: "",
     reklamThree: "",
-    localData: [], 
+    localData: [],
     bookData: [], // from app.vue
     sliderBooks: [
       {
@@ -28,6 +28,12 @@ export default createStore({
         img:
           "http://ekitap.yek.gov.tr/uploads/productsimages/358f58d4-f7aa-4213-b1c1-47111ed55a33.jpeg",
       },
+    ],
+    secondNav: [
+      { title: "#kronikler", href: "#kronikler" },
+      { title: "#literatür", href: "#usefulsites" },
+      { title: "#koleksiyonlar", href: "#koleksiyonlar" },
+      { title: "#yazmaeserler", href: "#yazmaeserler" },
     ],
   },
 
