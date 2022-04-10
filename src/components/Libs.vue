@@ -65,7 +65,7 @@
                   v-for="item in this.$store.getters.blogs"
                   :key="item"
                 >
-                  <PanelCard :title="item.title" :icon="item.iconuri" />
+                  <PanelCard :url="item.uri" :title="item.title" :icon="item.iconuri" />
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
                   v-for="item in this.$store.getters.dictionary"
                   :key="item"
                 >
-                  <PanelCard :title="item.title" :icon="item.iconuri" />
+                  <PanelCard :url="item.uri" :title="item.title" :icon="item.iconuri" />
                 </div>
               </div>
             </div>
@@ -114,17 +114,10 @@
                   v-for="item in this.$store.getters.literatur"
                   :key="item"
                 >
-                  <PanelCard :title="item.title" :icon="item.iconuri" />
+                  <PanelCard :url="item.uri" :title="item.title" :icon="item.iconuri" />
                 </div>
               </div>
             </div>
-
-            <!-- <div
-              class="tab-pane fade"
-              id="list-settings"
-              role="tabpanel"
-              aria-labelledby="list-settings-list"
-            >haritalarar</div> -->
           </div>
         </div>
       </div>

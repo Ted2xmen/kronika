@@ -5,40 +5,26 @@ export default createStore({
     reklamOne: "",
     reklamTwo: "",
     reklamThree: "",
-    localData: [],
+    localData: [], 
     bookData: [], // from app.vue
     sliderBooks: [
       {
-        name: " EL-MENHELÜ'L-FÂİZ ",
-        url:
-          "http://ekitap.yek.gov.tr/urun/el-menhelu-l-faiz_764.aspx?CatId=279",
-        img: "https://library.ircica.org/images/logo.png",
+        img:
+          "http://ekitap.yek.gov.tr/store/makethumb.aspx?file=2e7b9646-bee3-4e52-9ebd-48cb20b07b09.jpeg%20&intSize=250",
       },
       {
-        name: "  TAHRÎRU USÛLİ’L-HENDESE VE’L-HİSÂB  ",
-        url:
-          "http://ekitap.yek.gov.tr/urun/tahriru-us%C3%BBli%E2%80%99l-hendese-ve%E2%80%99l-hisab_767.aspx?CatId=279",
+        img:
+          "http://ekitap.yek.gov.tr/store/makethumb.aspx?file=35cd76ef92-7968-4257-ae7f-51ce9b96da22.jpg%20&intSize=250",
+      },
+      {
+        img:
+          "http://ekitap.yek.gov.tr/uploads/productsimages/78fb5612-eaaa-472b-aad8-b37b2d71c4ef.jpg",
+      },
+      {
         img:
           "http://ekitap.yek.gov.tr/uploads/productsimages/358f58d4-f7aa-4213-b1c1-47111ed55a33.jpeg",
       },
       {
-        name: "  TAHRÎRU USÛLİ’L-HENDESE VE’L-HİSÂB  ",
-        url:
-          "http://ekitap.yek.gov.tr/urun/tahriru-us%C3%BBli%E2%80%99l-hendese-ve%E2%80%99l-hisab_767.aspx?CatId=279",
-        img:
-          "http://ekitap.yek.gov.tr/uploads/productsimages/358f58d4-f7aa-4213-b1c1-47111ed55a33.jpeg",
-      },
-      {
-        name: "  TAHRÎRU USÛLİ’L-HENDESE VE’L-HİSÂB  ",
-        url:
-          "http://ekitap.yek.gov.tr/urun/tahriru-us%C3%BBli%E2%80%99l-hendese-ve%E2%80%99l-hisab_767.aspx?CatId=279",
-        img:
-          "http://ekitap.yek.gov.tr/uploads/productsimages/358f58d4-f7aa-4213-b1c1-47111ed55a33.jpeg",
-      },
-      {
-        name: "  TAHRÎRU USÛLİ’L-HENDESE VE’L-HİSÂB  ",
-        url:
-          "http://ekitap.yek.gov.tr/urun/tahriru-us%C3%BBli%E2%80%99l-hendese-ve%E2%80%99l-hisab_767.aspx?CatId=279",
         img:
           "http://ekitap.yek.gov.tr/uploads/productsimages/358f58d4-f7aa-4213-b1c1-47111ed55a33.jpeg",
       },

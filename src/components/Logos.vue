@@ -1,11 +1,10 @@
 <template>
-  <div class="row">
-    <p>logos</p>
+  <div class="row d-flex align-items-center">
     <div class="col">
       <a href="http://ekitap.yek.gov.tr/default.aspx">
         <img
           src="http://www.kadisicilleri.org/images/resim1.jpg"
-          class="img-fluid"
+          class="img-fluid rounded-3 shadow"
           width="300"
           alt=""
         />
@@ -19,9 +18,9 @@
             <a href="">
               <img
                 :src="slide.image"
-                width="180"
-                height="120"
-                class="customImage  p-2 m-2"
+                width="140"
+                height="100"
+                class="customImage shadow rounded p-2 m-2"
                 alt=""
               />
             </a>

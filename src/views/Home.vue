@@ -4,7 +4,6 @@
       <TheNavbar id="top" />
       <TheHero />
     </section>
-
     <div class="container">
       <TheInfo />
       <NavRow />
@@ -13,10 +12,10 @@
       <MobilPanel />
       <Panel class="d-sm-none d-md-block d-none d-sm-block" />
       <Organizasyon />
-      <Siteler class="my-2" />
       <Koleksiyonlar class="px-2 py-3 my-6" />
-      <Yazmalar class="my-3" />
+      <Siteler class="my-2" />
       <Qua class="py-2 my-5" />
+      <Yazmalar class="my-3" />
       <Kronikler class="py-5 my-4 shadow" />
     </div>
     <div id="footer">

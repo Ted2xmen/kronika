@@ -12,24 +12,7 @@
         v-for="item in this.$store.getters.library"
         :key="item"
       >
-        <li
-          class="
-            hover
-            rounded
-            list-group-item
-            d-flex
-            justify-content-between
-            align-items-center
-          "
-        >
-          {{ item.title }}
-          <img :src="item.iconuri" width="30" class="rounded" alt="" />
-        </li>
-
-        <!-- <img :src="item.iconuri" width="30" class="rounded me-2" alt="" />
-        <span>
-          {{ item.title }}
-        </span> -->
+        <PanelCard :url="item.uri" :title="item.title" :icon="item.iconuri" />
       </div>
     </div>
   </div>
@@ -39,7 +22,14 @@
 
 
 <script>
+import PanelCard from "@/components/shared/PanelCard.vue";
 export default {
-  name: "SiteCards",
+  name: "Libs",
+  components: {
+    PanelCard,
+  },
 };
 </script>
+
+
+

@@ -1,11 +1,11 @@
 <template>
-  <div class="row">
+  <div class="row d-flex align-items-center">
     <div class="col-md-8 d-sm-none d-md-block d-none d-sm-block">
       <Carousel :itemsToShow="4" :autoplay="3000" :wrapAround="true">
         <Slide v-for="slide in this.$store.state.sliderBooks" :key="slide">
           <div class="carousel__item">
-            <a href="">
-              <img :src="slide.img" width="120" alt="" />
+            <a href="http://ekitap.yek.gov.tr/default.aspx" target="_blank">
+              <img :src="slide.img" width="100" alt="" />
             </a>
           </div>
         </Slide>
@@ -13,11 +13,12 @@
         ...
       </Carousel>
     </div>
-    <div class="col">
-      <a href="http://ekitap.yek.gov.tr/default.aspx">
+    <div class="col ">
+      <a href="http://ekitap.yek.gov.tr/default.aspx" target="_blank">
         <img
           src="http://ekitap.yek.gov.tr/uploads/banner_002.jpg"
           class="img-fluid"
+   
           alt=""
         />
       </a>

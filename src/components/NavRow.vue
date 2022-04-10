@@ -21,7 +21,7 @@ export default {
     return {
       nawRow: [
         { title: "#kronikler", href: "#kronikler" },
-        { title: "#siteler", href: "#usefulsites" },
+        { title: "#literatür", href: "#usefulsites" },
         { title: "#koleksiyonlar", href: "#koleksiyonlar" },
         { title: "#yazmaeserler", href: "#yazmaeserler" }
       ],

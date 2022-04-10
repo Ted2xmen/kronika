@@ -1,10 +1,10 @@
 <template>
-    <section id="logos">
-  <div>
-    <Title icon="book" class="py-2" sectionTitle="Faydalı Siteler" />
-    <Logos />
-  </div>
-</section>
+  <section id="logos">
+    <div>
+      <Title icon="book" class="py-2" sectionTitle="Faydalı Siteler" />
+      <Logos />
+    </div>
+  </section>
 </template>
 
 <script>
@@ -12,10 +12,9 @@ import Title from "@/components/shared/Title.vue";
 import Logos from "@/components/Logos.vue";
 
 export default {
-    components: {
-        Title, 
-        Logos
-    }
-    
-}
+  components: {
+    Title,
+    Logos,
+  },
+};
 </script>

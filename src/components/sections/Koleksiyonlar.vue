@@ -1,7 +1,7 @@
 <template>
   <section id="koleksiyonlar">
     <div>
-      <Title icon="book" class="py-2" sectionTitle="Koleksiyonlar" />
+      <Title icon="paperclip" class="py-2" sectionTitle="Koleksiyonlar" />
       <Collections />
     </div>
   </section>

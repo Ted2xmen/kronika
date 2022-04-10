@@ -13,10 +13,7 @@
 
       <div class="col-2">
         <ul class="nav flex-column">
-          <li> <img
-        src="https://2.bp.blogspot.com/-befed9Id8Ag/WFlWnD4fuqI/AAAAAAAAJHE/X9mI3KzPgY4rNMKb4QwQVD0y48BX1GccwCLcB/s1000/revolvingbanner4hamse7.png"
-        alt="" class="img-fluid"
-      /></li>
+
      
         </ul>
       </div>
@@ -24,7 +21,6 @@
       <div class="col-2">
    
         <ul class="nav flex-column">
-        <li><img src="https://kutuphaneden.vercel.app/assets/oner.png"  class="img-fluid" alt=""></li>
         
         </ul>
       </div>
