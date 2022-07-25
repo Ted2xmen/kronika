@@ -4,7 +4,7 @@
       <div class="carousel__item my-2">
         <a href="#" class="link">
           <div class="col">
-            <div class="hover border border-dark box-3 mx-2">
+            <div class="hover rounded-3 mx-4 bg-dark border border-dark box-3 mx-2">
               <div class="row">
                 <div class="col-md-3">
                   <img
@@ -24,8 +24,8 @@
               <div class="card-body">
                 <p
                   class="
+                  text-light
                     card-text
-                    text-muted
                     d-sm-none d-md-block d-none d-sm-block
                   "
                 >

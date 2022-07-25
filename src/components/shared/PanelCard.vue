@@ -1,17 +1,16 @@
 <template>
-  <a :href="url" target="_blank" class="link">
+  <a :href="url" target="_blank" class="link rounded-3">
     <li
       class="
-        bg-glass
+      bg-primary bg-opacity-75
         text-white
-        border
         hover
-        rounded
+        rounded-4
         list-group-item
         d-flex
         justify-content-start
         align-items-center">
-      <img :src="icon" width="40" height="40" class="rounded me-2" alt="" />
+      <img :src="icon" width="40" height="40" class="rounded-3 me-2" :alt="title" />
       {{ title }}
     </li>
   </a>

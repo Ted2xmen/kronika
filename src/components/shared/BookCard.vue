@@ -1,6 +1,6 @@
 <template>
    <div
-            class="card border border-danger bg-dark text-white rounded mb-3"
+            class="card border border-dark bg-primary bg-opacity-75 text-white rounded mb-3"
             style="max-width: 540px"
           >
             <div class="row g-0">

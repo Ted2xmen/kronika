@@ -15,7 +15,6 @@ export default {
           for (let key in data.children) {
             var n = data.children[key].children;
             this.$store.state.localData.push(n);
-            console.log(n[0]);
           }
         })
         .catch((error) => {
@@ -60,7 +59,7 @@ export default {
     color: #d1d9e0;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #4992fd;
     }
   }
 }
